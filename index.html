@@ -418,6 +418,7 @@
     .award { background: var(--panel); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 6px; padding: 14px 16px; }
     .award b { display: block; font-size: 16px; }
     .award span { display: block; color: #B9C8D6; font-size: 14.5px; margin-top: 2px; }
+    .award:last-child:nth-child(odd) { grid-column: 1 / -1; }
     h3.sub { font-family: var(--mono); font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin: 36px 0 14px; }
     .chips.flat { margin-top: 0; }
     ul.plain { list-style: none; margin: 0; padding: 0; color: #B9C8D6; }
@@ -433,6 +434,17 @@
     .quote figcaption b { display: block; } .quote figcaption span { display: block; color: var(--muted); font-size: 14.5px; }
     .quote figcaption a { font-family: var(--mono); font-size: 13px; color: var(--accent); }
     @media (max-width: 860px) { .award-grid, .proof { grid-template-columns: minmax(0,1fr); } }
+
+    .quote.featured { background: linear-gradient(135deg, rgba(79,209,197,.10), rgba(76,141,255,.08)); border-color: rgba(79,209,197,.35); padding: 28px 30px; position: relative; }
+    .quote.featured::before { content: "\201C"; position: absolute; top: 4px; right: 24px; font-size: 90px; line-height: 1; color: rgba(79,209,197,.25); font-family: Georgia, serif; }
+    .quote.featured blockquote { font-size: 20px; line-height: 1.55; }
+    .quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-bottom: 18px; }
+    .quote-grid .quote { margin: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; }
+    .quote-grid .quote blockquote { font-size: 15px; color: #C5D2DE; }
+    .quote figcaption { display: flex; gap: 12px; align-items: center; }
+    .quote figcaption div b { font-size: 15px; } .quote figcaption div span { font-size: 13px; line-height: 1.4; }
+    .quote figcaption .av { flex: none; display: grid; color: #04201D; font-size: 13px; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #4FD1C5, #4C8DFF); color: #04201D; font-family: var(--mono); font-weight: 600; font-size: 13px; }
+    @media (max-width: 1000px) { .quote-grid { grid-template-columns: minmax(0,1fr); } }
   </style>
 </head>
 <body>
@@ -500,7 +512,7 @@
               <div class="card"><h3>Freelance and contract</h3><p>Scoped builds and rescues: RAG, agentic workflows, document intelligence, evaluation setups. Quick to start, clear about trade-offs.</p></div>
               <div class="card"><h3>Full-time AI roles</h3><p>Senior AI, GenAI or Solutions Engineer and architecture-focused roles where I can own architecture and still write code.</p></div>
               <div class="card"><h3>Early-stage founders</h3><p>I have co-founded a startup and worked with early-stage teams. Happy to turn a rough idea into a working, evaluated product fast.</p></div>
-              <div class="card"><h3>Hackathons and community</h3><p>Looking for teams, events and meetups across Sydney. Three-time hackathon winner who enjoys building under pressure.</p></div>
+              <div class="card"><h3>Hackathons and community</h3><p>Looking for teams, events and meetups across Sydney. Three-time hackathon first-prize winner who enjoys building under pressure.</p></div>
             </div>
           </div>
         </div>
@@ -677,7 +689,7 @@
               <li><b>New AI solutions</b><span>Prototyping with the latest models and agent frameworks, including Claude Agent SDK, MCP and LangGraph, to see what is genuinely ready for production.</span></li>
               <li><b>Robotics and healthcare</b><span>Two fields I care about most. I co-founded a student robotics startup, building competition robots, and spent years on healthcare automation, from medical coding to billing and patient-data migration. I want to work where AI meets physical systems and patient outcomes.</span></li>
               <li><b>Working across cultures</b><span>Clients and teams in Germany, Finland, Belgium, India and Australia have taught me to communicate clearly, adapt to different working styles and keep remote teams aligned.</span></li>
-              <li><b>Hackathons</b><span>MachineHack at MLDS 2025, All India Defence Innovation Hackathon (IIT Madras) and the AWS Community Hackathon. I am looking for the next one, ideally in Sydney.</span></li>
+              <li><b>Hackathons</b><span>First prizes at MLDS 2025 (Man vs Machine), the Defence Innovation Hackathon at IIT Madras (AI track) and the AWS Hackathon with AWS Kochi User Group. I am looking for the next one, ideally in Sydney.</span></li>
               <li><b>AI networking</b><span>Keen to meet founders, engineers and hiring managers in Sydney's AI community. Happy to swap ideas, review architectures or pair on a problem.</span></li>
               <li><b>The Sydney AI market</b><span>Exploring how Australian teams in finance, insurance, health and government are adopting GenAI, and where responsible-AI and governance experience helps most.</span></li>
               <li><b>Freelance</b><span>Taking on a small number of independent engagements alongside or instead of a full-time role.</span></li>
@@ -695,14 +707,13 @@
           <h2 id="awards-h">Awards and achievements</h2>
           <div class="body reveal">
             <div class="award-grid">
-              <div class="award"><b>Winner</b><span>MachineHack coding competition, MLDS 2025</span></div>
-              <div class="award"><b>First prize</b><span>All India Defence Innovation Hackathon, IIT Madras (AI track)</span></div>
-              <div class="award"><b>First prize</b><span>Man vs Machine Hackathon, MLDS Conference</span></div>
-              <div class="award"><b>Winner</b><span>AWS Community Hackathon, AWS Kochi User Group</span></div>
-              <div class="award"><b>Leading Star Award</b><span>Allianz, Feb 2026</span></div>
-              <div class="award"><b>Best Innovation Award</b><span>Allianz, Sep 2025, for the AI contract-analysis solution</span></div>
-              <div class="award"><b>Achiever Award</b><span>Allianz, Nov 2024</span></div>
-              <div class="award"><b>Best Innovation Team Award</b><span>Recognised for team innovation</span></div>
+              <div class="award"><b>First prize, MLDS 2025</b><span>Man vs Machine Hackathon (MachineHack), Analytics India, Feb 2025</span></div>
+              <div class="award"><b>First prize, AI track</b><span>Defence Innovation Hackathon, IIT Madras, Jan 2020</span></div>
+              <div class="award"><b>First prize</b><span>AWS Hackathon, AWS Kochi User Group, Jan 2019</span></div>
+              <div class="award"><b>Teamwork Award</b><span>"Win as a Team", Allianz Technology, Sep 2026</span></div>
+              <div class="award"><b>Leading Star Award</b><span>Allianz Services, 2026</span></div>
+              <div class="award"><b>Best Innovation Team Award</b><span>Allianz Services, Sep 2025, for the AI contract-analysis solution</span></div>
+              <div class="award"><b>Achiever Award</b><span>Allianz Services, Nov 2024</span></div>
             </div>
 
             <h3 class="sub">Certifications</h3>
@@ -726,7 +737,7 @@
             <h3 class="sub">Credentials and posts</h3>
             <div class="proof">
               <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/certifications/"><b>All certificates</b><span>Verified credentials on LinkedIn</span></a>
-              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/honors/"><b>Honors and awards</b><span>Full list on LinkedIn</span></a>
+              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/honors/"><b>Honors and awards</b><span>Certificates and photos on LinkedIn</span></a>
               <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/recent-activity/all/"><b>Posts and updates</b><span>Hackathons, builds and AI notes</span></a>
             </div>
           </div>
@@ -737,14 +748,29 @@
         <div class="rail">
           <h2 id="rec-h">Recommendations</h2>
           <div class="body reveal">
-            <p>Managers and teammates I have worked with have written recommendations on LinkedIn. They are public and verifiable, so you can check who said what, and contact them if you like.</p>
-            <!-- Add real quotes here, one block per recommendation, copied exactly from LinkedIn:
-            <figure class="quote">
-              <blockquote>"Exact excerpt from the recommendation."</blockquote>
-              <figcaption><b>Name</b><span>Role, Company. Was Akhil's manager.</span><a href="LINKEDIN_RECOMMENDATION_URL">Read on LinkedIn</a></figcaption>
+            <p><strong>15 recommendations</strong> on LinkedIn from managers and teammates. A few excerpts below, with the full text public and verifiable on my profile.</p>
+
+            <figure class="quote featured">
+              <blockquote>"I've had the privilege of working with Akhil as his Product Owner for the past two years, and I can say without hesitation: he is one of the most talented engineers I've encountered in my career. [...] His learning speed is astonishing; he picks up new domains, tools, and frameworks faster than anyone I've worked with. [...] Elite output with zero ego is extraordinarily uncommon."</blockquote>
+              <figcaption><span class="av" aria-hidden="true">MR</span><div><b>Marziam Pietro Russo</b><span>Senior AI Product Manager. Managed Akhil directly. Jun 2026.</span></div></figcaption>
             </figure>
-            -->
-            <a class="proof-card wide" href="https://www.linkedin.com/in/akhilpeterrajan/details/recommendations/"><b>Read my recommendations on LinkedIn</b><span>From managers and team members across Allianz, Aveta.ai and earlier roles</span></a>
+
+            <div class="quote-grid">
+              <figure class="quote">
+                <blockquote>"Faced with a technical difficulty, Akhil was always able to see how the larger framing of the problem could be changed to provide a way forward. He thinks and develops outside the box, tries new things, and never gives up. [...] A gifted developer and strategist [...] He was a real asset to me and a great mentor for the team."</blockquote>
+                <figcaption><span class="av" aria-hidden="true">ML</span><div><b>Dr. Matthew Lehar</b><span>Head of Procurement Analytics, Allianz SE. Managed Akhil directly.</span></div></figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>"Akhil is smart, competent, articulated and a good person. I appreciate his creativity and openness to explore new ways, and his determination to find working solutions to the problems we are working on. [...] I strongly recommend Akhil as a team member and contributor to the next big thing you are building!"</blockquote>
+                <figcaption><span class="av" aria-hidden="true">DW</span><div><b>Denny Wong</b><span>Repeat founder, building regulatory-compliance software. Managed Akhil directly. Feb 2022.</span></div></figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>"He displayed excellence in machine learning, python programming, and hard work. [...] Timelines never seemed to be an issue for him since he always beat them while also ensuring that his work was of high standard."</blockquote>
+                <figcaption><span class="av" aria-hidden="true">JJ</span><div><b>Jobi Alungal Jose</b><span>Integration Platform Support Specialist, Icon Water. Managed Akhil directly. Jul 2024.</span></div></figcaption>
+              </figure>
+            </div>
+
+            <a class="proof-card wide" href="https://www.linkedin.com/in/akhilpeterrajan/details/recommendations/"><b>Read all 15 recommendations on LinkedIn</b><span>Verified profiles you can check and contact</span></a>
           </div>
         </div>
       </section>
