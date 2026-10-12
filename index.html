@@ -511,6 +511,17 @@
           <h2 id="work-h">Selected work</h2>
           <div class="body">
             <article class="project">
+              <h3>SupportPilot AI</h3>
+              <p class="tag">Multi-tenant customer-support AI. Drop in with one script tag.</p>
+              <p>A chat assistant any business can embed on its site. It answers from each customer's own documents with source citations and a confidence gate so it does not guess, checks order status for the signed-in user only, opens Jira tickets after confirmation, and hands off to a live human agent in real time.</p>
+              <p>Security is designed in layers: identity comes from a token signed by the customer's backend, the model cannot choose whose data to read, and a foreign order and a missing order return identical responses. Quality is gated by about 20 release checks with a READY or NOT READY verdict, 137 tests at 93.9% coverage, and a capacity and cost model sized for roughly 30,000 conversations a day.</p>
+              <ul class="stack" aria-label="Technologies">
+                <li>Claude API</li><li>FastAPI</li><li>React + Shadow DOM widget</li><li>BM25 retrieval</li><li>WebSockets</li><li>Postgres + Redis</li><li>Jira</li><li>Prometheus</li><li>Docker Compose</li>
+              </ul>
+              <p class="links">Source available on request. Message me on <a href="https://www.linkedin.com/in/akhilpeterrajan/">LinkedIn</a>.</p>
+            </article>
+
+            <article class="project">
               <h3>AI4Human</h3>
               <p class="tag">Multi-agent wellness companion. In active development.</p>
               <p>An orchestrator coordinates nutrition, fitness, sleep and recovery, and mental-wellbeing specialists plus a check-in agent. Safety is enforced in code, not just prompts: crisis, eating-disorder and medical red-flag messages get a vetted response and the agents never run, tools are allow-listed by a hook, and an output gate blocks unsafe calorie targets, dosing advice and diagnoses. Calorie and trend numbers come from tools, not the model.</p>
@@ -521,15 +532,6 @@
               <p class="links"><a href="https://github.com/akhil4rajan/ai4human-fitness">View the code on GitHub</a></p>
             </article>
 
-            <!-- TODO: SupportPilot AI card. Fill in a 2-3 sentence description, stack and repo link, then uncomment.
-            <article class="project">
-              <h3>SupportPilot AI</h3>
-              <p class="tag">...</p>
-              <p>...</p>
-              <ul class="stack" aria-label="Technologies"><li>...</li></ul>
-              <p class="links"><a href="https://github.com/akhil4rajan/supportpilot-ai">View the code on GitHub</a></p>
-            </article>
-            -->
           </div>
         </div>
       </section>
