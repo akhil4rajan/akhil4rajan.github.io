@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Akhil Rajan | Senior AI Solutions Engineer</title>
-  <meta name="description" content="Akhil Rajan builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on Azure. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
+  <meta name="description" content="Akhil Rajan builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on Azure, for clients across Germany, Finland, Belgium, India and Australia. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#070B14">
   <meta property="og:title" content="Akhil Rajan | Senior AI Solutions Engineer">
@@ -402,6 +402,37 @@
     .timeline .when { white-space: nowrap; }
     @media (max-width: 760px) { .timeline::before { left: 5px; } .timeline > li { grid-template-columns: minmax(0,1fr); } .timeline > li::before { left: 0; } }
     @media (max-width: 600px) { .wordmark span:last-child { display: none; } .topbar nav { gap: 10px; } .topbar nav a.cta { white-space: nowrap; } }
+
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px; box-shadow: 0 0 60px rgba(76,141,255,.08); }
+    .glance-head { display: flex; align-items: center; gap: 14px; padding-bottom: 18px; margin-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .glance-head .logo { width: 48px; height: 48px; font-size: 19px; border-radius: 12px; }
+    .glance-head b { display: block; font-size: 18px; }
+    .glance-head span:not(.logo) { color: var(--muted); font-size: 14px; }
+    .glance dl { margin: 0; }
+    .glance dl div { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .glance dl div:last-child { border-bottom: 0; padding-bottom: 0; }
+    .glance dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
+    .glance dd { margin: 0; color: #C5D2DE; font-size: 15.5px; }
+
+    .award-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .award { background: var(--panel); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 6px; padding: 14px 16px; }
+    .award b { display: block; font-size: 16px; }
+    .award span { display: block; color: #B9C8D6; font-size: 14.5px; margin-top: 2px; }
+    h3.sub { font-family: var(--mono); font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin: 36px 0 14px; }
+    .chips.flat { margin-top: 0; }
+    ul.plain { list-style: none; margin: 0; padding: 0; color: #B9C8D6; }
+    ul.plain li { padding: 4px 0; }
+    .proof { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .proof-card { display: block; text-decoration: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; transition: border-color .2s, transform .2s; }
+    .proof-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .proof-card b { display: block; color: var(--text); }
+    .proof-card span { display: block; color: var(--muted); font-size: 14.5px; margin-top: 3px; }
+    .proof-card.wide { margin-top: 8px; border-color: rgba(79,209,197,.4); }
+    .quote { margin: 0 0 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; }
+    .quote blockquote { margin: 0 0 14px; font-size: 18px; line-height: 1.55; color: var(--text); }
+    .quote figcaption b { display: block; } .quote figcaption span { display: block; color: var(--muted); font-size: 14.5px; }
+    .quote figcaption a { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+    @media (max-width: 860px) { .award-grid, .proof { grid-template-columns: minmax(0,1fr); } }
   </style>
 </head>
 <body>
@@ -414,8 +445,9 @@
       <nav aria-label="Main">
         <a href="#work">Work</a>
         <a class="optional" href="#experience">Experience</a>
-        <a class="optional" href="#services">Services</a>
-        <a class="optional" href="#beyond">Beyond work</a>
+        <a class="optional" href="#awards">Awards</a>
+        <a class="optional" href="#recommendations">Recommendations</a>
+        <a class="optional" href="#stack">Skills</a>
         <a class="cta" href="#contact">Hire me</a>
         <a class="icon-link" href="https://www.linkedin.com/in/akhilpeterrajan/" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
       </nav>
@@ -431,32 +463,28 @@
           <h1 id="headline">Turning <span class="hl">frontier AI</span> into products people rely on.</h1>
           <p class="lede">I take the newest ideas in AI, from agents to vision-language models, and ship them as production systems on Azure: multi-agent RAG, LLM evaluation and real users. 8+ years across insurance, procurement, healthcare and travel.</p>
           <p class="status">Open to freelance, contract and full-time roles in Sydney and across Australia. Also keen on hackathons and the local AI community.
-            <span>Full work rights in Australia (subclass 485), no sponsorship required. Immediate start.</span></p>
+            <span>Full work rights in Australia, no sponsorship required. Immediate start.</span></p>
           <div class="actions">
             <a class="btn primary" href="https://www.linkedin.com/in/akhilpeterrajan/"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>Connect on LinkedIn</a>
             <a class="btn ghost" href="https://github.com/akhil4rajan"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>See the code</a>
           </div>
         </div>
 
-        <div class="trace" id="trace" role="img" aria-label="Illustrative trace of a multi-agent retrieval flow: a planner splits a question, retrieval agents run BM25 and dense search in parallel, results are fused and reranked, and the answer is returned with page and line citations.">
-          <div class="trace-head" aria-hidden="false">
-            <span>trace: contract-qa</span>
-            <button type="button" id="replay" aria-label="Replay the trace animation">replay</button>
-          </div>
-          <div class="trace-q" aria-hidden="true"><b>q</b> Which contracts allow early termination?</div>
-          <div class="rows" id="rows" aria-hidden="true"></div>
-          <div class="trace-out" id="traceOut" aria-hidden="true">
-            <strong>answer</strong> grounded in 3 contracts<br>
-            contract-03.pdf, p.12, lines 4 to 9
-          </div>
-          <div class="trace-note">Illustrative flow from my contract RAG work. Not real data.</div>
-        </div>
+        <aside class="glance" aria-label="At a glance">
+          <div class="glance-head"><span class="logo" aria-hidden="true">AR</span><div><b>Akhil Rajan</b><span>Senior AI Solutions Engineer</span></div></div>
+          <dl>
+            <div><dt>Based in</dt><dd>Sydney, NSW, Australia</dd></div>
+            <div><dt>Focus</dt><dd>GenAI, agentic systems, RAG, vision-language models, LLMOps</dd></div>
+            <div><dt>Passionate about</dt><dd>Robotics, healthcare AI and the latest breakthroughs in AI</dd></div>
+            <div><dt>Worked with clients in</dt><dd>Germany, Finland, Belgium, India and Australia</dd></div>
+          </dl>
+        </aside>
       </section>
       <div class="stats reveal" role="list" aria-label="Headline numbers">
-        <div role="listitem"><b>8+ yrs</b><span>shipping AI in production</span></div>
-        <div role="listitem"><b>15,000+</b><span>contracts processed by one platform</span></div>
-        <div role="listitem"><b>500+</b><span>colleagues across 30+ departments</span></div>
-        <div role="listitem"><b>94%+</b><span>extraction accuracy on a human-labelled set</span></div>
+        <div role="listitem"><b>8+ yrs</b><span>building and shipping AI in production</span></div>
+        <div role="listitem"><b>5 countries</b><span>clients and teams across Germany, Finland, Belgium, India and Australia</span></div>
+        <div role="listitem"><b>92%+</b><span>document-extraction accuracy I delivered at Aveta.ai</span></div>
+        <div role="listitem"><b>85%+</b><span>less manual effort in medical-billing workflows I automated</span></div>
       </div>
       <div class="shipped reveal"><p>Where I have shipped</p>
         <ul><li>Allianz</li><li>Aveta.ai</li><li>Jiffy.ai</li><li>Muna.io</li><li>IBS Software</li></ul></div>
@@ -467,10 +495,10 @@
         <div class="rail">
           <h2 id="open-h">What I am looking for</h2>
           <div class="body reveal">
-            <p>I am based in Sydney and building my footprint in the Australian AI market. I want to work with teams who are taking GenAI from demo to something people rely on.</p>
+            <p>I am based in Sydney and building my footprint in the Australian AI market. I have worked with clients and teams in Germany, Finland, Belgium, India and Australia, so I am comfortable across cultures, time zones and ways of working. I want to work with teams taking GenAI from demo to something people rely on.</p>
             <div class="cards">
               <div class="card"><h3>Freelance and contract</h3><p>Scoped builds and rescues: RAG, agentic workflows, document intelligence, evaluation setups. Quick to start, clear about trade-offs.</p></div>
-              <div class="card"><h3>Full-time AI roles</h3><p>Senior AI, GenAI or Solutions Engineer and technical lead roles where I can own architecture and still write code.</p></div>
+              <div class="card"><h3>Full-time AI roles</h3><p>Senior AI, GenAI or Solutions Engineer and architecture-focused roles where I can own architecture and still write code.</p></div>
               <div class="card"><h3>Early-stage founders</h3><p>I have co-founded a startup and worked with early-stage teams. Happy to turn a rough idea into a working, evaluated product fast.</p></div>
               <div class="card"><h3>Hackathons and community</h3><p>Looking for teams, events and meetups across Sydney. Three-time hackathon winner who enjoys building under pressure.</p></div>
             </div>
@@ -483,47 +511,49 @@
           <h2 id="work-h">Selected work</h2>
           <div class="body">
             <article class="project">
-              <h3>Contract Intelligence RAG App</h3>
-              <p>Upload PDF contracts, ask questions across one or several, and get answers grounded in the source. Each answer cites the contract, page and line numbers, and clicking a citation highlights the lines in the original PDF.</p>
-              <ul class="stack" aria-label="Technologies">
-                <li>FastAPI</li><li>LangChain</li><li>Claude API</li><li>BM25 + dense retrieval with RRF</li><li>OCR for scanned PDFs</li><li>React + TypeScript</li><li>pytest</li>
-              </ul>
-              <p class="links"><a href="https://github.com/akhil4rajan/contract-intelligence-rag-app">View the code on GitHub</a></p>
-            </article>
-
-            <article class="project">
               <h3>AI4Human</h3>
-              <p class="tag">New, in active development</p>
-              <p>A multi-agent wellness companion: nutrition, fitness, sleep and mental-wellbeing specialists coordinated by an orchestrator. A code-level safety layer sits around the model: crisis and medical messages bypass it, and calorie floors and output checks are enforced in code, not just prompts. It includes offline evals, Langfuse observability, CI with a browser smoke test, and bring-your-own-key privacy.</p>
+              <p class="tag">Multi-agent wellness companion. In active development.</p>
+              <p>An orchestrator coordinates nutrition, fitness, sleep and recovery, and mental-wellbeing specialists plus a check-in agent. Safety is enforced in code, not just prompts: crisis, eating-disorder and medical red-flag messages get a vetted response and the agents never run, tools are allow-listed by a hook, and an output gate blocks unsafe calorie targets, dosing advice and diagnoses. Calorie and trend numbers come from tools, not the model.</p>
+              <p>It ships with offline safety evals and 52 backend tests, optional Langfuse tracing with content stripped by default, streaming responses, and bring-your-own-key privacy.</p>
               <ul class="stack" aria-label="Technologies">
-                <li>Claude Agent SDK</li><li>FastAPI</li><li>Next.js</li><li>SSE streaming</li><li>SQLite</li><li>Langfuse</li><li>Playwright</li><li>GitHub Actions</li>
+                <li>Claude Agent SDK</li><li>FastAPI</li><li>Next.js + TypeScript</li><li>SSE streaming</li><li>SQLite</li><li>Langfuse</li><li>Playwright</li><li>Docker Compose</li>
               </ul>
               <p class="links"><a href="https://github.com/akhil4rajan/ai4human-fitness">View the code on GitHub</a></p>
             </article>
+
+            <!-- TODO: SupportPilot AI card. Fill in a 2-3 sentence description, stack and repo link, then uncomment.
+            <article class="project">
+              <h3>SupportPilot AI</h3>
+              <p class="tag">...</p>
+              <p>...</p>
+              <ul class="stack" aria-label="Technologies"><li>...</li></ul>
+              <p class="links"><a href="https://github.com/akhil4rajan/supportpilot-ai">View the code on GitHub</a></p>
+            </article>
+            -->
           </div>
         </div>
       </section>
 
       <section class="block" id="results" aria-labelledby="results-h">
         <div class="rail">
-          <h2 id="results-h">Production results</h2>
+          <h2 id="results-h">Impact I have driven</h2>
           <div class="body">
             <dl class="results">
               <div class="item">
-                <dt>Contract-processing platform at Allianz</dt>
-                <dd><em>15,000+</em> contracts processed, used by <em>500 to 600</em> colleagues across <em>30+</em> departments, with <em>94%+</em> extraction accuracy against a human-labelled test set.</dd>
+                <dt>Healthcare automation at Aveta.ai</dt>
+                <dd>Operationalised end-to-end document processing at <em>92%+</em> extraction accuracy and automated medical-billing workflows for an <em>85%+</em> cut in manual effort. Built an LLM and RAG medical-coding engine on top.</dd>
               </div>
               <div class="item">
-                <dt>Hierarchical multi-agent RAG</dt>
-                <dd>A planner agent splits questions into sub-queries, domain agents run them in parallel, and a single cited answer comes back.</dd>
+                <dt>Enterprise AI at Allianz</dt>
+                <dd>Core engineer on a GenAI contract-intelligence platform adopted across Allianz's global procurement community. My part: the LLM and multi-agent RAG design, retrieval and citation grounding, and the prompt and evaluation tooling around it.</dd>
               </div>
               <div class="item">
                 <dt>AI test generation</dt>
-                <dd>Computer vision and vision-language models turn screen recordings into executable tests, run by a Playwright agent with LLM-as-judge scoring.</dd>
+                <dd>Designed a system where vision-language models read screen recordings and UI screenshots to generate executable tests, run by a Playwright agent with LLM-as-judge scoring and Jira integration.</dd>
               </div>
               <div class="item">
-                <dt>Healthcare automation at Aveta.ai</dt>
-                <dd>LLM and RAG medical coding with <em>92%+</em> document-extraction accuracy and an <em>85%+</em> reduction in manual billing intervention.</dd>
+                <dt>AI governance for regulated industry</dt>
+                <dd>Prepared <em>20+</em> governance control documents (threat modelling, vulnerability management, identity and access, backup and recovery, secure code review) to take the application through an enterprise AI risk and security assessment.</dd>
               </div>
             </dl>
           </div>
@@ -539,9 +569,9 @@
               <li class="now">
                 <p class="when">2024 – 26<small>Jul 2024 → Oct 2026</small></p>
                 <div class="tl-body">
-                <h3>Senior AI Solutions Engineer, Technical Lead</h3>
+                <h3>Senior AI Solutions Engineer</h3>
                 <p class="org">Allianz, insurance and procurement</p>
-                <p>Led a four-engineer team and shipped a GenAI contract-processing platform used across 30+ departments. Architected a hierarchical multi-agent RAG system, a VLM-driven test generation framework, and the evaluation and prompt tooling behind them. Selected for a five-week on-site assignment with Allianz in Sydney.</p>
+                <p>Core engineer on a GenAI contract-intelligence platform adopted across Allianz's global procurement community. Designed a hierarchical multi-agent RAG system, a VLM-driven test generation framework, and the prompt and evaluation tooling behind them. Selected for a five-week on-site assignment with Allianz Australia in Sydney.</p>
               </div>
               </li>
               <li>
@@ -618,13 +648,18 @@
 
       <section class="block" id="stack" aria-labelledby="stack-h">
         <div class="rail">
-          <h2 id="stack-h">Stack</h2>
-          <div class="body">
+          <h2 id="stack-h">Skills and stack</h2>
+          <div class="body reveal">
             <dl class="groups">
-              <div class="item"><dt>GenAI and agents</dt><dd>Claude API, Azure OpenAI, LangGraph, LlamaIndex, MCP, Pydantic, Langfuse</dd></div>
-              <div class="item"><dt>ML and NLP</dt><dd>Hugging Face Transformers, scikit-learn, pandas, OCR, Document Intelligence</dd></div>
-              <div class="item"><dt>Engineering</dt><dd>Python, TypeScript, SQL, FastAPI, React, Docker, PostgreSQL, GitHub Actions</dd></div>
-              <div class="item"><dt>Cloud and automation</dt><dd>Microsoft Azure (Container Apps, Document Intelligence, Foundry), Power Platform</dd></div>
+              <div class="item"><dt>Generative AI and agents</dt><dd>Agentic AI and multi-agent systems, RAG, LLMs, Vision Language Models, structured outputs and tool use, MCP, Claude API, Claude Agent SDK, Azure OpenAI, LangChain, LangGraph, AutoGen, CrewAI, LlamaIndex, Pydantic, hallucination mitigation, conversational AI</dd></div>
+              <div class="item"><dt>Prompting, retrieval and evaluation</dt><dd>System prompt design, prompt versioning and approval gates, semantic and contextual chunking, vector search, two-stage retrieval with reranking, hybrid BM25 and dense retrieval, LLM-as-judge, A/B testing and benchmarking, Langfuse</dd></div>
+              <div class="item"><dt>ML and NLP</dt><dd>Computer vision, OCR, document intelligence, named entity recognition, text classification, recommendation systems, summarisation, scikit-learn, pandas, TensorFlow and Keras, Hugging Face Transformers</dd></div>
+              <div class="item"><dt>Engineering</dt><dd>Python, TypeScript, SQL, FastAPI, Flask, Django, REST APIs, React, Next.js, microservices, PostgreSQL, SQLite, Playwright, pytest</dd></div>
+              <div class="item"><dt>Cloud and DevOps</dt><dd>Microsoft Azure (Container Apps, Document Intelligence, Foundry), AWS, Docker, CI/CD with Azure DevOps and GitHub Actions, LLMOps</dd></div>
+              <div class="item"><dt>AI governance and security</dt><dd>AI risk assessment, responsible-AI guardrails, threat modelling, secure code review, identity and access management, SonarQube, Wiz, Qualys, GitHub Advanced Security</dd></div>
+              <div class="item"><dt>Enterprise automation</dt><dd>Power Apps, Power Automate, Power BI, RPA, Jira and Zephyr integration</dd></div>
+              <div class="item"><dt>Leadership</dt><dd>Solution architecture, technical mentoring, stakeholder requirements, client-facing delivery, AI enablement and upskilling</dd></div>
+              <div class="item"><dt>Domains</dt><dd>Insurance, procurement, healthcare, travel and aviation, data monetisation</dd></div>
             </dl>
           </div>
         </div>
@@ -638,6 +673,8 @@
             <ul class="interest-list">
               <li><b>The latest in AI</b><span>I follow the very recent developments closely: new frontier models, agent frameworks, MCP and evaluation research. I try them hands-on within days, not months, so I know what is hype and what is ready for real work.</span></li>
               <li><b>New AI solutions</b><span>Prototyping with the latest models and agent frameworks, including Claude Agent SDK, MCP and LangGraph, to see what is genuinely ready for production.</span></li>
+              <li><b>Robotics and healthcare</b><span>Two fields I care about most. I co-founded a student robotics startup, building competition robots, and spent years on healthcare automation, from medical coding to billing and patient-data migration. I want to work where AI meets physical systems and patient outcomes.</span></li>
+              <li><b>Working across cultures</b><span>Clients and teams in Germany, Finland, Belgium, India and Australia have taught me to communicate clearly, adapt to different working styles and keep remote teams aligned.</span></li>
               <li><b>Hackathons</b><span>MachineHack at MLDS 2025, All India Defence Innovation Hackathon (IIT Madras) and the AWS Community Hackathon. I am looking for the next one, ideally in Sydney.</span></li>
               <li><b>AI networking</b><span>Keen to meet founders, engineers and hiring managers in Sydney's AI community. Happy to swap ideas, review architectures or pair on a problem.</span></li>
               <li><b>The Sydney AI market</b><span>Exploring how Australian teams in finance, insurance, health and government are adopting GenAI, and where responsible-AI and governance experience helps most.</span></li>
@@ -645,34 +682,67 @@
               <li><b>Mentoring</b><span>I enjoy mentoring engineers on LLMOps, RAG evaluation and moving from prototype to production.</span></li>
             </ul>
             <ul class="chips" aria-label="Interests">
-              <li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
+              <li>Robotics</li><li>Healthcare AI</li><li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="block" id="recognition" aria-labelledby="recog-h">
+      <section class="block" id="awards" aria-labelledby="awards-h">
         <div class="rail">
-          <h2 id="recog-h">Recognition</h2>
-          <div class="body recog">
-            <h3>Awards</h3>
-            <ul>
-              <li>Leading Star Award, Allianz (Feb 2026)</li>
-              <li>Achiever Award, Allianz (Nov 2024)</li>
-              <li>Best Innovation Award, Allianz (Sep 2025)</li>
+          <h2 id="awards-h">Awards and achievements</h2>
+          <div class="body reveal">
+            <div class="award-grid">
+              <div class="award"><b>Winner</b><span>MachineHack coding competition, MLDS 2025</span></div>
+              <div class="award"><b>First prize</b><span>All India Defence Innovation Hackathon, IIT Madras (AI track)</span></div>
+              <div class="award"><b>First prize</b><span>Man vs Machine Hackathon, MLDS Conference</span></div>
+              <div class="award"><b>Winner</b><span>AWS Community Hackathon, AWS Kochi User Group</span></div>
+              <div class="award"><b>Leading Star Award</b><span>Allianz, Feb 2026</span></div>
+              <div class="award"><b>Best Innovation Award</b><span>Allianz, Sep 2025, for the AI contract-analysis solution</span></div>
+              <div class="award"><b>Achiever Award</b><span>Allianz, Nov 2024</span></div>
+              <div class="award"><b>Best Innovation Team Award</b><span>Recognised for team innovation</span></div>
+            </div>
+
+            <h3 class="sub">Certifications</h3>
+            <ul class="chips flat">
+              <li>IBM RAG and Agentic AI: Build Next-Gen AI Systems (2025)</li>
+              <li>Anthropic Academy: Building with the Claude API</li>
+              <li>Anthropic Academy: Claude Code 101 (2026)</li>
+              <li>Jiffy.ai AUTOMATE Level 1</li>
+              <li>TensorFlow 2.0 with the Keras API</li>
+              <li>National Workshop on Machine Learning</li>
+              <li>Python A-Z</li>
+              <li>Autodesk Fusion 360 Certified User</li>
             </ul>
-            <h3>Hackathons</h3>
-            <ul>
-              <li>Winner, MachineHack at MLDS 2025</li>
-              <li>First Prize, All India Defence Innovation Hackathon (IIT Madras)</li>
-              <li>Winner, AWS Community Hackathon</li>
+
+            <h3 class="sub">Education</h3>
+            <ul class="plain">
+              <li>M.Tech, Data Science and Engineering, BITS Pilani (2022)</li>
+              <li>B.Tech, Mechanical Engineering, Mahatma Gandhi University, First Class with Distinction (2018)</li>
             </ul>
-            <h3>Education and learning</h3>
-            <ul>
-              <li>M.Tech Data Science and Engineering, BITS Pilani</li>
-              <li>IBM RAG and Agentic AI Specialisation</li>
-              <li>Anthropic Academy (Claude API, Claude Code)</li>
-            </ul>
+
+            <h3 class="sub">Credentials and posts</h3>
+            <div class="proof">
+              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/certifications/"><b>All certificates</b><span>Verified credentials on LinkedIn</span></a>
+              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/honors/"><b>Honors and awards</b><span>Full list on LinkedIn</span></a>
+              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/recent-activity/all/"><b>Posts and updates</b><span>Hackathons, builds and AI notes</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="recommendations" aria-labelledby="rec-h">
+        <div class="rail">
+          <h2 id="rec-h">Recommendations</h2>
+          <div class="body reveal">
+            <p>Managers and teammates I have worked with have written recommendations on LinkedIn. They are public and verifiable, so you can check who said what, and contact them if you like.</p>
+            <!-- Add real quotes here, one block per recommendation, copied exactly from LinkedIn:
+            <figure class="quote">
+              <blockquote>"Exact excerpt from the recommendation."</blockquote>
+              <figcaption><b>Name</b><span>Role, Company. Was Akhil's manager.</span><a href="LINKEDIN_RECOMMENDATION_URL">Read on LinkedIn</a></figcaption>
+            </figure>
+            -->
+            <a class="proof-card wide" href="https://www.linkedin.com/in/akhilpeterrajan/details/recommendations/"><b>Read my recommendations on LinkedIn</b><span>From managers and team members across Allianz, Aveta.ai and earlier roles</span></a>
           </div>
         </div>
       </section>
@@ -704,73 +774,6 @@
     <div class="wrap">Akhil Rajan, Sydney, Australia. Open to freelance, contract and full-time AI roles.</div>
   </footer>
 
-  <script>
-    (function () {
-      var spans = [
-        { name: 'ask',               level: 0, start: 0,  end: 100, kind: 'root' },
-        { name: 'planner',           level: 1, start: 0,  end: 12 },
-        { name: 'agent.contracts',   level: 1, start: 12, end: 70 },
-        { name: 'retrieve.bm25',     level: 2, start: 14, end: 36 },
-        { name: 'retrieve.dense',    level: 2, start: 14, end: 44 },
-        { name: 'rrf.fuse',          level: 2, start: 44, end: 52 },
-        { name: 'rerank',            level: 2, start: 52, end: 68 },
-        { name: 'answer.cite',       level: 1, start: 72, end: 96, kind: 'final' }
-      ];
-
-      var rowsEl = document.getElementById('rows');
-      var outEl = document.getElementById('traceOut');
-      var replayBtn = document.getElementById('replay');
-      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var timers = [];
-
-      function build() {
-        rowsEl.innerHTML = '';
-        spans.forEach(function (s) {
-          var row = document.createElement('div');
-          row.className = 'row' + (s.kind ? ' ' + s.kind : '');
-          var name = document.createElement('div');
-          name.className = 'name';
-          name.style.paddingLeft = (s.level * 14) + 'px';
-          name.textContent = s.name;
-          var track = document.createElement('div');
-          track.className = 'track';
-          var bar = document.createElement('div');
-          bar.className = 'bar';
-          bar.style.left = s.start + '%';
-          bar.style.width = (s.end - s.start) + '%';
-          track.appendChild(bar);
-          row.appendChild(name);
-          row.appendChild(track);
-          rowsEl.appendChild(row);
-        });
-      }
-
-      function clearTimers() {
-        timers.forEach(clearTimeout);
-        timers = [];
-      }
-
-      function play() {
-        clearTimers();
-        build();
-        outEl.classList.remove('on');
-        var rows = rowsEl.children;
-        if (reduce) {
-          for (var i = 0; i < rows.length; i++) rows[i].classList.add('on');
-          outEl.classList.add('on');
-          return;
-        }
-        var step = 260;
-        Array.prototype.forEach.call(rows, function (row, i) {
-          timers.push(setTimeout(function () { row.classList.add('on'); }, 350 + i * step));
-        });
-        timers.push(setTimeout(function () { outEl.classList.add('on'); }, 350 + rows.length * step + 200));
-      }
-
-      replayBtn.addEventListener('click', play);
-      play();
-    })();
-  </script>
 
   <script>
     (function () {
