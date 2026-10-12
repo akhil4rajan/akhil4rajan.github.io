@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Akhil Rajan | Senior AI Solutions Engineer</title>
-  <meta name="description" content="Akhil Rajan builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on the cloud, for clients across Germany, Finland, Belgium, India and Australia. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
+  <meta name="description" content="Akhil Rajan is a product-minded AI engineer who builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on the cloud, for clients across Germany, Finland, Belgium, India and Australia. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#070B14">
   <script>(function(){var t;try{t=localStorage.getItem('theme');}catch(e){}if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)t='light';document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');})();</script>
@@ -514,6 +514,20 @@
     .glance-head { gap: 18px; }
     .glance-head b { font-size: 20px; }
     @media (max-width: 600px) { .topbar nav a:not(.cta):not(.icon-link):not(.menu-btn) { display: none; } .topbar nav { gap: 8px; } }
+
+    .statement { font-size: clamp(20px, 2.3vw, 26px); line-height: 1.45; max-width: 36em !important; margin: 0 0 26px !important; color: var(--text); }
+    .statement em { font-style: normal; background: linear-gradient(90deg, var(--g1), var(--g2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+    .why { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; transition: border-color .2s, transform .2s; }
+    .why:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .why span { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .12em; }
+    .why h3 { font-size: 17px; font-weight: 600; margin: 6px 0 6px; }
+    .why p { margin: 0; color: var(--text-2); font-size: 15px; max-width: none; }
+    .why-note { margin-top: 22px !important; color: var(--muted); font-size: 15.5px; border-left: 2px solid var(--accent); padding-left: 14px; }
+    :root[data-theme="light"] .why { box-shadow: 0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.05); }
+    .reveal.in .why { animation: rise .6s ease both; }
+    .reveal.in .why:nth-child(2) { animation-delay: .08s; } .reveal.in .why:nth-child(3) { animation-delay: .16s; } .reveal.in .why:nth-child(4) { animation-delay: .24s; } .reveal.in .why:nth-child(5) { animation-delay: .32s; }
+    @media (max-width: 860px) { .why-grid { grid-template-columns: minmax(0,1fr); } }
   </style>
   <noscript><style>.reveal,.hero > div:first-child > *,.glance{opacity:1!important;transform:none!important;animation:none!important}</style></noscript>
 </head>
@@ -539,7 +553,7 @@
     </div>
   </header>
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#stack">Skills</a><a href="#awards">Awards</a><a href="#beyond">Beyond work</a><a href="#contact">Contact</a>
+    <a href="#why">What drives me</a><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#stack">Skills</a><a href="#awards">Awards</a><a href="#beyond">Beyond work</a><a href="#contact">Contact</a>
   </div>
 
   <main id="main">
@@ -549,7 +563,7 @@
           <p class="pill"><span class="dot" aria-hidden="true"></span>Available now, Sydney NSW</p>
           <p class="who">Akhil Rajan, Senior AI Solutions Engineer in Sydney</p>
           <h1 id="headline">Turning <span class="hl">frontier AI</span> into products people rely on.</h1>
-          <p class="lede">I take the newest ideas in AI, from agents to vision-language models, and ship them as production systems on the cloud: multi-agent RAG, LLM evaluation and real users. 8+ years across insurance, procurement, healthcare and travel.</p>
+          <p class="lede">I am happiest building AI products. I take the newest ideas in AI, from agents to vision-language models, and ship them as production systems on the cloud: multi-agent RAG, LLM evaluation and real users. 8+ years across insurance, procurement, healthcare and travel.</p>
           <p class="status">Open to freelance, contract and full-time roles in Sydney and across Australia. Also keen on hackathons and the local AI community.
             <span>Full work rights in Australia, no sponsorship required. Immediate start.</span></p>
           <div class="actions">
@@ -563,7 +577,7 @@
           <dl>
             <div><dt>Based in</dt><dd>Sydney, NSW, Australia</dd></div>
             <div><dt>Focus</dt><dd>GenAI, agentic systems, RAG, vision-language models, LLMOps</dd></div>
-            <div><dt>Passionate about</dt><dd>Robotics, healthcare AI and the latest breakthroughs in AI</dd></div>
+            <div><dt>Passionate about</dt><dd>Building AI products that solve hard problems. Healthcare, robotics and the latest in AI.</dd></div>
             <div><dt>Worked with clients in</dt><dd>Germany, Finland, Belgium, India and Australia</dd></div>
           </dl>
         </aside>
@@ -590,6 +604,23 @@
               <div class="card"><h3>Early-stage founders</h3><p>I have co-founded a startup and worked with early-stage teams. Happy to turn a rough idea into a working, evaluated product fast.</p></div>
               <div class="card"><h3>Hackathons and community</h3><p>Looking for teams, events and meetups across Sydney. Three-time hackathon first-prize winner who enjoys building under pressure.</p></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="why" aria-labelledby="why-h">
+        <div class="rail">
+          <h2 id="why-h">What drives me</h2>
+          <div class="body reveal">
+            <p class="statement">I believe core AI should be pointed at the hardest problems humanity has, not only at making business faster. That is why I would rather build AI <em>products</em> that people use than models that sit in a notebook.</p>
+            <div class="why-grid">
+              <div class="why"><span>01</span><h3>Healthcare</h3><p>Hard problems in diagnosis support, medical coding, patient data and access to care.</p></div>
+              <div class="why"><span>02</span><h3>The planet</h3><p>Protecting the environment and the future safety of the planet we all share.</p></div>
+              <div class="why"><span>03</span><h3>Education for all</h3><p>Quality learning for less privileged communities, wherever they are.</p></div>
+              <div class="why"><span>04</span><h3>24/7 human support</h3><p>Mental-health and physical-fitness support that is there at any hour, safely.</p></div>
+              <div class="why"><span>05</span><h3>Peace and harmony</h3><p>Tools that help people understand each other and improve global harmony.</p></div>
+            </div>
+            <p class="why-note">AI4Human, my multi-agent wellness companion, is my first step on the fourth one. I am looking for teams and ideas that are aiming at the others.</p>
           </div>
         </div>
       </section>
@@ -843,6 +874,7 @@
           <div class="body reveal">
             <p>What I am actively into outside client work.</p>
             <ul class="interest-list">
+              <li><b>Building AI products</b><span>My favourite part of the job is taking an idea from a rough problem to something real people use, owning the product thinking as much as the model.</span></li>
               <li><b>The latest in AI</b><span>I follow new frontier models, agent frameworks, MCP and evaluation research, and try them hands-on within days, so I know what is hype and what is ready for real work.</span></li>
               <li><b>Robotics and healthcare</b><span>Two fields I care about. I co-founded a student robotics startup and spent years on healthcare automation, from medical coding to billing. I want to work where AI meets physical systems and patient outcomes.</span></li>
               <li><b>Working across cultures</b><span>Teams in Germany, Finland, Belgium, India and Australia taught me to communicate clearly and keep remote teams aligned.</span></li>
@@ -852,7 +884,7 @@
               <li><b>Mentoring</b><span>I enjoy mentoring engineers on LLMOps, RAG evaluation and moving from prototype to production.</span></li>
             </ul>
             <ul class="chips" aria-label="Interests">
-              <li>Robotics</li><li>Healthcare AI</li><li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
+              <li>AI products</li><li>Robotics</li><li>Healthcare AI</li><li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
             </ul>
           </div>
         </div>
