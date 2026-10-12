@@ -4,18 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Akhil Rajan | Senior AI Solutions Engineer</title>
-  <meta name="description" content="Akhil Rajan builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on Azure, for clients across Germany, Finland, Belgium, India and Australia. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
-  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Akhil Rajan builds production GenAI systems end to end: multi-agent RAG, vision-language models and LLM evaluation, shipped on the cloud, for clients across Germany, Finland, Belgium, India and Australia. Based in Sydney, open to freelance, contract and full-time roles, hackathons and AI networking.">
+  <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#070B14">
+  <script>(function(){var t;try{t=localStorage.getItem('theme');}catch(e){}if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)t='light';document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');})();</script>
   <meta property="og:title" content="Akhil Rajan | Senior AI Solutions Engineer">
   <meta property="og:description" content="Production GenAI systems, multi-agent RAG and LLM evaluation. Sydney, Australia.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://akhil4rajan.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Akhil Rajan, Senior AI Solutions Engineer in Sydney">
+  <meta name="twitter:image" content="https://akhil4rajan.github.io/assets/og-image.png">
+  <meta property="og:url" content="https://akhil4rajan.github.io/">
+  <link rel="canonical" href="https://akhil4rajan.github.io/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akhil Rajan","jobTitle":"Senior AI Solutions Engineer","image":"https://akhil4rajan.github.io/assets/akhil.jpg","url":"https://akhil4rajan.github.io/","address":{"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},"sameAs":["https://www.linkedin.com/in/akhilpeterrajan/","https://github.com/akhil4rajan","https://huggingface.co/akhilpeterrajan"],"knowsAbout":["Generative AI","Agentic AI","Multi-agent systems","Retrieval-augmented generation","LLMOps","Computer vision"]}</script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0F15'/%3E%3Ctext x='16' y='22' font-family='monospace' font-weight='700' font-size='15' text-anchor='middle' fill='%234FD1C5'%3EAR%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root[data-theme="light"] {
+      --bg: #F5F8FB; --panel: #FFFFFF; --panel-2: #EEF3F8; --line: #D9E2EC;
+      --text: #0F1A2A; --muted: #51657A; --accent: #0B7F75; --accent-ink: #04201D;
+      --g1: #0B8A7E; --g2: #2563EB; --text-2: #34465A; --text-3: #8497AB;
+      --bar-bg: rgba(245,248,251,.88); --menu-bg: rgba(245,248,251,.98);
+      --pill-bg: rgba(255,255,255,.85); --grid: rgba(15,26,42,.045);
+      --card-hover: #8FB5C9; --tl-line: #A9C3D6;
+    }
     :root {
       --bg: #070B14;
       --panel: #0C1422;
@@ -24,6 +41,11 @@
       --text: #DCE6F0;
       --muted: #8CA0B3;
       --accent: #4FD1C5;
+      --g1: #4FD1C5; --g2: #6CA8FF;
+      --text-2: #B9C8D6; --text-3: #6F8399;
+      --bar-bg: rgba(7, 11, 20, 0.85); --menu-bg: rgba(7,11,20,.97);
+      --pill-bg: rgba(16,24,34,0.8); --grid: rgba(255,255,255,0.025);
+      --card-hover: #35506b; --tl-line: #2c4a66;
       --accent-ink: #04201D;
       --span: #6C9BFF;
       --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -56,7 +78,7 @@
     /* Top bar */
     .topbar {
       position: sticky; top: 0; z-index: 10;
-      background: rgba(7, 11, 20, 0.85);
+      background: var(--bar-bg);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--line);
     }
@@ -83,7 +105,7 @@
       letter-spacing: -0.025em;
       margin: 0 0 22px;
     }
-    .hero .lede { color: #B9C8D6; max-width: 52ch; margin: 0 0 26px; }
+    .hero .lede { color: var(--text-2); max-width: 52ch; margin: 0 0 26px; }
     .status {
       border-left: 2px solid var(--accent);
       padding: 2px 0 2px 14px;
@@ -187,7 +209,7 @@
     }
     .services .item:first-child { padding-top: 0; }
     .services dt { font-weight: 600; }
-    .services dd { margin: 0; color: #B9C8D6; }
+    .services dd { margin: 0; color: var(--text-2); }
     .also { margin-top: 20px !important; color: var(--muted); font-size: 15px; }
 
     /* Work */
@@ -195,7 +217,7 @@
     .project:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
     .project h3 { font-family: var(--mono); font-size: 18px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
     .project .tag { font-family: var(--mono); font-size: 12.5px; color: var(--accent); margin: 0 0 12px; }
-    .project p { color: #B9C8D6; }
+    .project p { color: var(--text-2); }
     .stack { list-style: none; padding: 0; margin: 18px 0 18px; display: flex; flex-wrap: wrap; gap: 8px; }
     .stack li {
       font-family: var(--mono); font-size: 12.5px; color: var(--muted);
@@ -209,7 +231,7 @@
     .results .item:first-child { padding-top: 0; }
     .results .item:last-child { border-bottom: 0; padding-bottom: 0; }
     .results dt { font-weight: 600; margin: 0 0 4px; }
-    .results dd { margin: 0; color: #B9C8D6; max-width: 68ch; }
+    .results dd { margin: 0; color: var(--text-2); max-width: 68ch; }
     .results em { font-style: normal; font-family: var(--mono); font-size: 0.93em; color: var(--accent); }
 
     /* Stack */
@@ -256,15 +278,15 @@
       background:
         radial-gradient(900px 480px at 85% -5%, rgba(76,141,255,0.16), transparent 60%),
         radial-gradient(700px 420px at -5% 10%, rgba(79,209,197,0.10), transparent 60%),
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px) 0 0 / 44px 44px,
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px) 0 0 / 44px 44px;
+        linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 44px 44px,
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 44px 44px;
       -webkit-mask-image: linear-gradient(#000 55%, transparent);
               mask-image: linear-gradient(#000 55%, transparent);
     }
     .pill {
       display: inline-flex; align-items: center; gap: 9px;
       font-family: var(--mono); font-size: 12.5px; color: var(--text);
-      border: 1px solid var(--line); background: rgba(16,24,34,0.8);
+      border: 1px solid var(--line); background: var(--pill-bg);
       border-radius: 999px; padding: 5px 13px; margin: 0 0 20px;
     }
     .dot { width: 8px; height: 8px; border-radius: 50%; background: #4ADE80; box-shadow: 0 0 0 0 rgba(74,222,128,.6); animation: pulse 2.2s infinite; }
@@ -287,9 +309,9 @@
       background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
       padding: 20px 22px; transition: border-color .2s, transform .2s;
     }
-    .card:hover { border-color: #35506b; transform: translateY(-2px); }
+    .card:hover { border-color: var(--card-hover); transform: translateY(-2px); }
     .card h3 { font-family: var(--mono); font-size: 15px; font-weight: 600; margin: 0 0 8px; color: var(--accent); letter-spacing: -0.01em; }
-    .card p { margin: 0; color: #B9C8D6; font-size: 15.5px; max-width: none; }
+    .card p { margin: 0; color: var(--text-2); font-size: 15.5px; max-width: none; }
 
     .timeline { list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 1px solid var(--line); }
     .timeline > li { position: relative; padding: 0 0 34px; }
@@ -302,14 +324,14 @@
     .timeline .when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin: 0 0 4px; }
     .timeline h3 { font-size: 17px; font-weight: 600; margin: 0 0 2px; }
     .timeline .org { color: var(--accent); font-family: var(--mono); font-size: 13.5px; margin: 0 0 8px; }
-    .timeline p { margin: 0; color: #B9C8D6; font-size: 15.5px; }
+    .timeline p { margin: 0; color: var(--text-2); font-size: 15.5px; }
 
     .interest-list { list-style: none; margin: 0; padding: 0; }
     .interest-list li { padding: 14px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 170px minmax(0,1fr); gap: 24px; }
     .interest-list li:first-child { padding-top: 0; }
     .interest-list li:last-child { border-bottom: 0; padding-bottom: 0; }
     .interest-list b { font-weight: 600; }
-    .interest-list span { color: #B9C8D6; }
+    .interest-list span { color: var(--text-2); }
 
     .chips { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
     .chips li { font-family: var(--mono); font-size: 12.5px; color: var(--text); border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 4px 12px; }
@@ -353,7 +375,7 @@
     @media (max-width: 1000px) { .topbar .profile-url { display: none; } }
 
     .rail > h2 { font-size: 13px; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-    .hero h1 .hl, .gradtitle span { background: linear-gradient(90deg, #4FD1C5, #6CA8FF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero h1 .hl, .gradtitle span { background: linear-gradient(90deg, var(--g1), var(--g2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .hero h1 { font-weight: 600; }
     .btn.primary, .topbar nav a.cta, .logo { background: linear-gradient(135deg, #4FD1C5, #4C8DFF); border-color: transparent; }
     .btn.primary:hover, .topbar nav a.cta:hover { background: linear-gradient(135deg, #7FE6DB, #6CA8FF); }
@@ -369,14 +391,14 @@
     .shipped { text-align: center; padding: 34px 0 4px; }
     .shipped p { font-family: var(--mono); font-size: 11.5px; letter-spacing: .34em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; }
     .shipped ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 44px; }
-    .shipped li { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: #6F8399; transition: color .2s; }
+    .shipped li { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: var(--text-3); transition: color .2s; }
     .shipped li:hover { color: var(--text); }
 
     .gradtitle { font-weight: 400; font-size: clamp(34px, 5.5vw, 60px); line-height: 1.1; text-align: center; margin: 0 0 56px; letter-spacing: -0.02em; }
     .timeline { border-left: 0; padding: 0; position: relative; }
-    .timeline::before { content: ""; position: absolute; left: 190px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--line), #2c4a66, var(--line)); }
+    .timeline::before { content: ""; position: absolute; left: 190px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--line), var(--tl-line), var(--line)); }
     .timeline > li { display: grid; grid-template-columns: 170px 40px minmax(0,1fr); align-items: start; padding-bottom: 44px; }
-    .timeline > li::before { left: 185px; top: 14px; width: 11px; height: 11px; border: 0; background: #4FD1C5; box-shadow: 0 0 0 5px rgba(79,209,197,.16), 0 0 16px rgba(79,209,197,.6); }
+    .timeline > li::before { left: 185px; top: 14px; width: 11px; height: 11px; border: 0; background: var(--accent); box-shadow: 0 0 0 5px rgba(79,209,197,.16), 0 0 16px rgba(79,209,197,.6); }
     .timeline .when { grid-column: 1; font-family: var(--sans); font-size: clamp(26px, 3.4vw, 40px); font-weight: 600; letter-spacing: -0.02em; color: var(--text); line-height: 1.15; margin: 0; }
     .timeline .when small { display: block; font-family: var(--mono); font-size: 12px; color: var(--muted); font-weight: 400; letter-spacing: .05em; margin-top: 4px; }
     .timeline .tl-body { grid-column: 3; }
@@ -412,16 +434,16 @@
     .glance dl div { padding: 12px 0; border-bottom: 1px solid var(--line); }
     .glance dl div:last-child { border-bottom: 0; padding-bottom: 0; }
     .glance dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
-    .glance dd { margin: 0; color: #C5D2DE; font-size: 15.5px; }
+    .glance dd { margin: 0; color: var(--text-2); font-size: 15.5px; }
 
     .award-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
     .award { background: var(--panel); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 6px; padding: 14px 16px; }
     .award b { display: block; font-size: 16px; }
-    .award span { display: block; color: #B9C8D6; font-size: 14.5px; margin-top: 2px; }
+    .award span { display: block; color: var(--text-2); font-size: 14.5px; margin-top: 2px; }
     .award:last-child:nth-child(odd) { grid-column: 1 / -1; }
     h3.sub { font-family: var(--mono); font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin: 36px 0 14px; }
     .chips.flat { margin-top: 0; }
-    ul.plain { list-style: none; margin: 0; padding: 0; color: #B9C8D6; }
+    ul.plain { list-style: none; margin: 0; padding: 0; color: var(--text-2); }
     ul.plain li { padding: 4px 0; }
     .proof { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
     .proof-card { display: block; text-decoration: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; transition: border-color .2s, transform .2s; }
@@ -440,31 +462,85 @@
     .quote.featured blockquote { font-size: 20px; line-height: 1.55; }
     .quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-bottom: 18px; }
     .quote-grid .quote { margin: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; }
-    .quote-grid .quote blockquote { font-size: 15px; color: #C5D2DE; }
+    .quote-grid .quote blockquote { font-size: 15px; color: var(--text-2); }
     .quote figcaption { display: flex; gap: 12px; align-items: center; }
     .quote figcaption div b { font-size: 15px; } .quote figcaption div span { font-size: 13px; line-height: 1.4; }
     .quote figcaption .av { flex: none; display: grid; color: #04201D; font-size: 13px; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #4FD1C5, #4C8DFF); color: #04201D; font-family: var(--mono); font-weight: 600; font-size: 13px; }
     @media (max-width: 1000px) { .quote-grid { grid-template-columns: minmax(0,1fr); } }
+
+    .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 30; background: linear-gradient(90deg, #4FD1C5, #4C8DFF); }
+    .menu-btn { display: none; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 8px; background: none; cursor: pointer; padding: 0; flex-direction: column; justify-content: center; align-items: center; gap: 4px; }
+    .menu-btn span { width: 16px; height: 2px; background: var(--text); border-radius: 2px; transition: transform .2s, opacity .2s; }
+    .menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .mobile-menu { position: fixed; top: 56px; left: 0; right: 0; z-index: 9; background: var(--menu-bg); border-bottom: 1px solid var(--line); padding: 8px 24px 16px; backdrop-filter: blur(10px); }
+    .mobile-menu[hidden] { display: none; }
+    .mobile-menu a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-size: 17px; }
+    @media (max-width: 760px) { .menu-btn { display: flex; } }
+    @media (min-width: 761px) { .mobile-menu { display: none !important; } }
+    .shipped li small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; color: var(--muted); margin-top: 2px; text-align: center; }
+    .also { margin: 26px 0 10px !important; font-family: var(--mono); font-size: 12px !important; letter-spacing: .2em; text-transform: uppercase; color: var(--muted) !important; }
+    .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .foot a { color: var(--muted); }
+    /* entrance and stagger */
+    .hero > div:first-child > * { opacity: 0; transform: translateY(14px); animation: rise .7s ease forwards; }
+    .hero > div:first-child > *:nth-child(2) { animation-delay: .08s; } .hero > div:first-child > *:nth-child(3) { animation-delay: .16s; }
+    .hero > div:first-child > *:nth-child(4) { animation-delay: .26s; } .hero > div:first-child > *:nth-child(5) { animation-delay: .34s; } .hero > div:first-child > *:nth-child(6) { animation-delay: .42s; }
+    .glance { opacity: 0; animation: rise .8s .3s ease forwards; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    .reveal.in .card, .reveal.in .award, .reveal.in .quote, .reveal.in .proof-card, .reveal.in .timeline > li { animation: rise .6s ease both; }
+    .reveal.in .card:nth-child(2), .reveal.in .award:nth-child(2), .reveal.in .quote-grid .quote:nth-child(2) { animation-delay: .08s; }
+    .reveal.in .card:nth-child(3), .reveal.in .award:nth-child(3), .reveal.in .quote-grid .quote:nth-child(3) { animation-delay: .16s; }
+    .reveal.in .card:nth-child(4), .reveal.in .award:nth-child(4) { animation-delay: .24s; }
+    .reveal.in .award:nth-child(n+5) { animation-delay: .3s; }
+    @media (prefers-reduced-motion: reduce) { .hero > div:first-child > *, .glance { opacity: 1; transform: none; animation: none; } .reveal.in * { animation: none !important; } .progress { display: none; } }
+    .stats b span { display: inline; margin: 0; font-size: inherit; color: inherit; line-height: inherit; }
+    .shipped ul { align-items: flex-start; }
+
+    .theme-btn { background: none; cursor: pointer; padding: 0; }
+    .theme-btn .i-sun { display: none; }
+    :root[data-theme="dark"] .theme-btn .i-sun { display: block; }
+    :root[data-theme="dark"] .theme-btn .i-moon { display: none; }
+    :root[data-theme="light"] .theme-btn .i-moon { display: block; }
+    :root[data-theme="light"] .theme-btn .i-sun { display: none; }
+    :root[data-theme="light"] .glance, :root[data-theme="light"] .card, :root[data-theme="light"] .award, :root[data-theme="light"] .quote, :root[data-theme="light"] .proof-card, :root[data-theme="light"] .stats { box-shadow: 0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.05); }
+    :root[data-theme="light"] .quote.featured { background: linear-gradient(135deg, rgba(11,138,126,.08), rgba(37,99,235,.06)); }
+    :root[data-theme="light"] .logo { box-shadow: 0 0 0 1px rgba(15,26,42,.05); }
+    :root[data-theme="light"] .li-float { border-color: rgba(11,138,126,.5); box-shadow: 0 8px 28px rgba(15,26,42,.18); }
+    :root[data-theme="light"] .skip { color: #fff; }
+    body, .topbar, .card, .glance, .award, .quote, .proof-card, .stats { transition: background-color .3s, border-color .3s, color .3s; }
+    .portrait { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid transparent; background: linear-gradient(var(--panel), var(--panel)) padding-box, linear-gradient(135deg, #4FD1C5, #4C8DFF) border-box; box-shadow: 0 0 24px rgba(79,209,197,.25); flex: none; }
+    .glance-head { gap: 18px; }
+    .glance-head b { font-size: 20px; }
+    @media (max-width: 600px) { .topbar nav a:not(.cta):not(.icon-link):not(.menu-btn) { display: none; } .topbar nav { gap: 8px; } }
   </style>
+  <noscript><style>.reveal,.hero > div:first-child > *,.glance{opacity:1!important;transform:none!important;animation:none!important}</style></noscript>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <div class="progress" id="progress" aria-hidden="true"></div>
   <header class="topbar">
     <div class="wrap">
       <a class="wordmark" href="#top" aria-label="Akhil Rajan, home"><span class="logo" aria-hidden="true">AR</span><span>akhil rajan</span></a>
       <a class="profile-url" href="https://www.linkedin.com/in/akhilpeterrajan/">linkedin.com/in/akhilpeterrajan</a>
       <nav aria-label="Main">
         <a href="#work">Work</a>
-        <a class="optional" href="#experience">Experience</a>
-        <a class="optional" href="#awards">Awards</a>
         <a class="optional" href="#recommendations">Recommendations</a>
+        <a class="optional" href="#experience">Experience</a>
         <a class="optional" href="#stack">Skills</a>
+        <a class="optional" href="#awards">Awards</a>
         <a class="cta" href="#contact">Hire me</a>
+        <button class="icon-link theme-btn" id="themeBtn" type="button" aria-label="Switch to light theme"><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
         <a class="icon-link" href="https://www.linkedin.com/in/akhilpeterrajan/" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
       </nav>
     </div>
   </header>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#stack">Skills</a><a href="#awards">Awards</a><a href="#beyond">Beyond work</a><a href="#contact">Contact</a>
+  </div>
 
   <main id="main">
     <div class="wrap" id="top">
@@ -473,7 +549,7 @@
           <p class="pill"><span class="dot" aria-hidden="true"></span>Available now, Sydney NSW</p>
           <p class="who">Akhil Rajan, Senior AI Solutions Engineer in Sydney</p>
           <h1 id="headline">Turning <span class="hl">frontier AI</span> into products people rely on.</h1>
-          <p class="lede">I take the newest ideas in AI, from agents to vision-language models, and ship them as production systems on Azure: multi-agent RAG, LLM evaluation and real users. 8+ years across insurance, procurement, healthcare and travel.</p>
+          <p class="lede">I take the newest ideas in AI, from agents to vision-language models, and ship them as production systems on the cloud: multi-agent RAG, LLM evaluation and real users. 8+ years across insurance, procurement, healthcare and travel.</p>
           <p class="status">Open to freelance, contract and full-time roles in Sydney and across Australia. Also keen on hackathons and the local AI community.
             <span>Full work rights in Australia, no sponsorship required. Immediate start.</span></p>
           <div class="actions">
@@ -483,7 +559,7 @@
         </div>
 
         <aside class="glance" aria-label="At a glance">
-          <div class="glance-head"><span class="logo" aria-hidden="true">AR</span><div><b>Akhil Rajan</b><span>Senior AI Solutions Engineer</span></div></div>
+          <div class="glance-head"><img class="portrait" src="assets/akhil.jpg" width="72" height="72" alt="Portrait of Akhil Rajan" decoding="async"><div><b>Akhil Rajan</b><span>Senior AI Solutions Engineer</span></div></div>
           <dl>
             <div><dt>Based in</dt><dd>Sydney, NSW, Australia</dd></div>
             <div><dt>Focus</dt><dd>GenAI, agentic systems, RAG, vision-language models, LLMOps</dd></div>
@@ -493,13 +569,13 @@
         </aside>
       </section>
       <div class="stats reveal" role="list" aria-label="Headline numbers">
-        <div role="listitem"><b>8+ yrs</b><span>building and shipping AI in production</span></div>
-        <div role="listitem"><b>5 countries</b><span>clients and teams across Germany, Finland, Belgium, India and Australia</span></div>
-        <div role="listitem"><b>92%+</b><span>document-extraction accuracy I delivered at Aveta.ai</span></div>
-        <div role="listitem"><b>85%+</b><span>less manual effort in medical-billing workflows I automated</span></div>
+        <div role="listitem"><b><span data-count="8">8</span>+ yrs</b><span>building and shipping AI in production</span></div>
+        <div role="listitem"><b><span data-count="5">5</span> countries</b><span>clients and teams across Germany, Finland, Belgium, India and Australia</span></div>
+        <div role="listitem"><b><span data-count="92">92</span>%+</b><span>document-extraction accuracy I delivered at Aveta.ai</span></div>
+        <div role="listitem"><b><span data-count="85">85</span>%+</b><span>less manual effort in medical-billing workflows I automated</span></div>
       </div>
       <div class="shipped reveal"><p>Where I have shipped</p>
-        <ul><li>Allianz</li><li>Aveta.ai</li><li>Jiffy.ai</li><li>Muna.io</li><li>IBS Software</li></ul></div>
+        <ul><li>Allianz</li><li>Aveta.ai<small>a Jiffy.ai company</small></li><li>Muna.io</li><li>IBS Software</li></ul></div>
     </div>
 
     <div class="wrap">
@@ -524,9 +600,9 @@
           <div class="body">
             <article class="project">
               <h3>SupportPilot AI</h3>
-              <p class="tag">Multi-tenant customer-support AI. Drop in with one script tag.</p>
-              <p>A chat assistant any business can embed on its site. It answers from each customer's own documents with source citations and a confidence gate so it does not guess, checks order status for the signed-in user only, opens Jira tickets after confirmation, and hands off to a live human agent in real time.</p>
-              <p>Security is designed in layers: identity comes from a token signed by the customer's backend, the model cannot choose whose data to read, and a foreign order and a missing order return identical responses. Quality is gated by about 20 release checks with a READY or NOT READY verdict, 137 tests at 93.9% coverage, and a capacity and cost model sized for roughly 30,000 conversations a day.</p>
+              <p class="tag">Multi-tenant support AI, embedded with one script tag.</p>
+              <p>A chat assistant any business can drop into its site. It answers from each customer's own documents with citations, checks order status for the signed-in user only, opens Jira tickets, and hands off to a live agent.</p>
+              <p>Security is layered: identity is signed by the customer's backend and the model can never choose whose data to read. Quality is gated by about 20 release checks, 137 tests at 93.9% coverage and a capacity model for roughly 30,000 conversations a day.</p>
               <ul class="stack" aria-label="Technologies">
                 <li>Claude API</li><li>FastAPI</li><li>React + Shadow DOM widget</li><li>BM25 retrieval</li><li>WebSockets</li><li>Postgres + Redis</li><li>Jira</li><li>Prometheus</li><li>Docker Compose</li>
               </ul>
@@ -535,15 +611,29 @@
 
             <article class="project">
               <h3>AI4Human</h3>
-              <p class="tag">Multi-agent wellness companion. In active development.</p>
-              <p>An orchestrator coordinates nutrition, fitness, sleep and recovery, and mental-wellbeing specialists plus a check-in agent. Safety is enforced in code, not just prompts: crisis, eating-disorder and medical red-flag messages get a vetted response and the agents never run, tools are allow-listed by a hook, and an output gate blocks unsafe calorie targets, dosing advice and diagnoses. Calorie and trend numbers come from tools, not the model.</p>
-              <p>It ships with offline safety evals and 52 backend tests, optional Langfuse tracing with content stripped by default, streaming responses, and bring-your-own-key privacy.</p>
+              <p class="tag">Multi-agent wellness companion. In development.</p>
+              <p>An orchestrator coordinates nutrition, fitness, sleep and mental-wellbeing specialists. Safety lives in code, not prompts: crisis and medical red flags get a vetted response and the agents never run, and an output gate blocks unsafe calorie targets, dosing advice and diagnoses.</p>
+              <p>Offline safety evals, 52 backend tests, optional Langfuse tracing and bring-your-own-key privacy.</p>
               <ul class="stack" aria-label="Technologies">
                 <li>Claude Agent SDK</li><li>FastAPI</li><li>Next.js + TypeScript</li><li>SSE streaming</li><li>SQLite</li><li>Langfuse</li><li>Playwright</li><li>Docker Compose</li>
               </ul>
               <p class="links"><a href="https://github.com/akhil4rajan/ai4human-fitness">View the code on GitHub</a></p>
             </article>
 
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="how" aria-labelledby="how-h">
+        <div class="rail">
+          <h2 id="how-h">How I work</h2>
+          <div class="body reveal">
+            <div class="cards">
+              <div class="card"><h3>Problem solver first</h3><p>I start from the business problem, not the model. When something blocks the way, I reframe it, learn what I need and keep going until it works. Colleagues have said I never give up, and I take that seriously.</p></div>
+              <div class="card"><h3>Multi-agent systems</h3><p>Planner and worker agents, agent-to-agent communication, tool use and LLM-as-judge evaluation, built with LangGraph, AutoGen, CrewAI and the Claude Agent SDK. Used in production at Allianz and in my own projects.</p></div>
+              <div class="card"><h3>Build fast, validate early</h3><p>Prototype quickly, measure against a labelled test set, then refine until it is production-grade. Evaluation and guardrails are part of the build, not an afterthought.</p></div>
+              <div class="card"><h3>Clear with stakeholders</h3><p>Comfortable shaping loosely defined problems with business teams across cultures, and explaining trade-offs in plain language.</p></div>
+            </div>
           </div>
         </div>
       </section>
@@ -555,21 +645,52 @@
             <dl class="results">
               <div class="item">
                 <dt>Healthcare automation at Aveta.ai</dt>
-                <dd>Operationalised end-to-end document processing at <em>92%+</em> extraction accuracy and automated medical-billing workflows for an <em>85%+</em> cut in manual effort. Built an LLM and RAG medical-coding engine on top.</dd>
+                <dd>Delivered <em>92%+</em> document-extraction accuracy and automated medical-billing workflows for an <em>85%+</em> cut in manual effort. Built an LLM and RAG medical-coding engine on top.</dd>
               </div>
               <div class="item">
-                <dt>Enterprise AI at Allianz</dt>
-                <dd>Core engineer on a GenAI contract-intelligence platform adopted across Allianz's global procurement community. My part: the LLM and multi-agent RAG design, retrieval and citation grounding, and the prompt and evaluation tooling around it.</dd>
+                <dt>Contract Intelligence platform at Allianz</dt>
+                <dd>Core engineer on the GenAI contract-intelligence platform for Allianz's global procurement community, used by hundreds of colleagues. My part: LLM and multi-agent RAG design, citation grounding, and the prompt and evaluation tooling.</dd>
               </div>
               <div class="item">
                 <dt>AI test generation</dt>
-                <dd>Designed a system where vision-language models read screen recordings and UI screenshots to generate executable tests, run by a Playwright agent with LLM-as-judge scoring and Jira integration.</dd>
+                <dd>Designed a system where vision-language models turn screen recordings and screenshots into executable tests, run by a Playwright agent with LLM-as-judge scoring.</dd>
               </div>
               <div class="item">
                 <dt>AI governance for regulated industry</dt>
-                <dd>Prepared <em>20+</em> governance control documents (threat modelling, vulnerability management, identity and access, backup and recovery, secure code review) to take the application through an enterprise AI risk and security assessment.</dd>
+                <dd>Prepared <em>20+</em> governance control documents to take the application through an enterprise AI risk and security assessment.</dd>
               </div>
             </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="recommendations" aria-labelledby="rec-h">
+        <div class="rail">
+          <h2 id="rec-h">Recommendations</h2>
+          <div class="body reveal">
+            <p><strong>15 recommendations</strong> on LinkedIn from managers and teammates. A few excerpts below, with the full text public and verifiable on my profile.</p>
+
+            <figure class="quote featured">
+              <blockquote>"I've had the privilege of working with Akhil as his Product Owner for the past two years, and I can say without hesitation: he is one of the most talented engineers I've encountered in my career. [...] His learning speed is astonishing; he picks up new domains, tools, and frameworks faster than anyone I've worked with. [...] Elite output with zero ego is extraordinarily uncommon."</blockquote>
+              <figcaption><span class="av" aria-hidden="true">MR</span><div><b>Marziam Pietro Russo</b><span>Senior AI Product Manager. Managed Akhil directly. Jun 2026.</span></div></figcaption>
+            </figure>
+
+            <div class="quote-grid">
+              <figure class="quote">
+                <blockquote>"Faced with a technical difficulty, Akhil was always able to see how the larger framing of the problem could be changed to provide a way forward. He thinks and develops outside the box, tries new things, and never gives up. [...] A gifted developer and strategist [...] He was a real asset to me and a great mentor for the team."</blockquote>
+                <figcaption><span class="av" aria-hidden="true">ML</span><div><b>Dr. Matthew Lehar</b><span>Head of Procurement Analytics, Allianz SE. Managed Akhil directly.</span></div></figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>"Akhil is smart, competent, articulated and a good person. I appreciate his creativity and openness to explore new ways, and his determination to find working solutions to the problems we are working on. [...] I strongly recommend Akhil as a team member and contributor to the next big thing you are building!"</blockquote>
+                <figcaption><span class="av" aria-hidden="true">DW</span><div><b>Denny Wong</b><span>Repeat founder, building regulatory-compliance software. Managed Akhil directly. Feb 2022.</span></div></figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>"He displayed excellence in machine learning, python programming, and hard work. [...] Timelines never seemed to be an issue for him since he always beat them while also ensuring that his work was of high standard."</blockquote>
+                <figcaption><span class="av" aria-hidden="true">JJ</span><div><b>Jobi Alungal Jose</b><span>Integration Platform Support Specialist, Icon Water. Managed Akhil directly. Jul 2024.</span></div></figcaption>
+              </figure>
+            </div>
+
+            <a class="proof-card wide" href="https://www.linkedin.com/in/akhilpeterrajan/details/recommendations/"><b>Read all 15 recommendations on LinkedIn</b><span>Verified profiles you can check and contact</span></a>
           </div>
         </div>
       </section>
@@ -585,15 +706,15 @@
                 <div class="tl-body">
                 <h3>Senior AI Solutions Engineer</h3>
                 <p class="org">Allianz, insurance and procurement</p>
-                <p>Core engineer on a GenAI contract-intelligence platform adopted across Allianz's global procurement community. Designed a hierarchical multi-agent RAG system, a VLM-driven test generation framework, and the prompt and evaluation tooling behind them. Selected for a five-week on-site assignment with Allianz Australia in Sydney.</p>
+                <p>Core engineer on the GenAI contract-intelligence platform. Designed a multi-agent RAG system, a VLM-driven test generation framework and the evaluation tooling behind them. Selected for a five-week on-site assignment in Sydney.</p>
               </div>
               </li>
               <li>
                 <p class="when">2022 – 24<small>Feb 2022 → Jun 2024</small></p>
                 <div class="tl-body">
                 <h3>Data Scientist</h3>
-                <p class="org">Aveta.ai, healthcare automation</p>
-                <p>Built document-processing and an LLM and RAG medical-coding engine. 92%+ extraction accuracy, 85%+ less manual billing work. Extended the work into the parent company's no-code AI platform.</p>
+                <p class="org">Aveta.ai (a Jiffy.ai company), healthcare automation</p>
+                <p>Built document processing and an LLM and RAG medical-coding engine. 92%+ extraction accuracy, 85%+ less manual billing work. Extended into parent company Jiffy.ai's no-code AI platform.</p>
               </div>
               </li>
               <li>
@@ -652,10 +773,11 @@
               </div>
               <div class="item">
                 <dt>Full-stack product development</dt>
-                <dd>Web apps from idea to working product: FastAPI, Django or Flask backends, React or Next.js frontends, PostgreSQL, streaming UIs, Docker, Azure Container Apps and CI/CD with GitHub Actions.</dd>
+                <dd>Web apps from idea to working product: FastAPI, Django or Flask backends, React or Next.js frontends, PostgreSQL, streaming UIs, Docker, cloud deployment on Azure or AWS and CI/CD with GitHub Actions.</dd>
               </div>
             </dl>
-            <p class="also">Also: computer vision and OCR, NLP and text analytics with Hugging Face transformers, machine learning and data science in pandas and scikit-learn, and enterprise automation with Power Apps, Power Automate and Power BI.</p>
+            <p class="also">Also in my toolkit</p>
+            <ul class="chips flat"><li>Computer vision and OCR</li><li>NLP with Hugging Face transformers</li><li>Machine learning and data science</li><li>Enterprise automation: Power Apps, Power Automate, Power BI</li></ul>
           </div>
         </div>
       </section>
@@ -665,7 +787,7 @@
           <h2 id="stack-h">Skills and stack</h2>
           <div class="body reveal">
             <dl class="groups">
-              <div class="item"><dt>Generative AI and agents</dt><dd>Agentic AI and multi-agent systems, RAG, LLMs, Vision Language Models, structured outputs and tool use, MCP, Claude API, Claude Agent SDK, Azure OpenAI, LangChain, LangGraph, AutoGen, CrewAI, LlamaIndex, Pydantic, hallucination mitigation, conversational AI</dd></div>
+              <div class="item"><dt>Generative AI and agents</dt><dd>Agentic AI and multi-agent systems, RAG, LLMs, Vision Language Models, structured outputs and tool use, MCP, Claude API, Claude Agent SDK, Azure OpenAI, LangChain, LangGraph, AutoGen, CrewAI, LlamaIndex, Pydantic, conversational AI</dd></div>
               <div class="item"><dt>Prompting, retrieval and evaluation</dt><dd>System prompt design, prompt versioning and approval gates, semantic and contextual chunking, vector search, two-stage retrieval with reranking, hybrid BM25 and dense retrieval, LLM-as-judge, A/B testing and benchmarking, Langfuse</dd></div>
               <div class="item"><dt>ML and NLP</dt><dd>Computer vision, OCR, document intelligence, named entity recognition, text classification, recommendation systems, summarisation, scikit-learn, pandas, TensorFlow and Keras, Hugging Face Transformers</dd></div>
               <div class="item"><dt>Engineering</dt><dd>Python, TypeScript, SQL, FastAPI, Flask, Django, REST APIs, React, Next.js, microservices, PostgreSQL, SQLite, Playwright, pytest</dd></div>
@@ -675,29 +797,6 @@
               <div class="item"><dt>Leadership</dt><dd>Solution architecture, technical mentoring, stakeholder requirements, client-facing delivery, AI enablement and upskilling</dd></div>
               <div class="item"><dt>Domains</dt><dd>Insurance, procurement, healthcare, travel and aviation, data monetisation</dd></div>
             </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="block" id="beyond" aria-labelledby="beyond-h">
-        <div class="rail">
-          <h2 id="beyond-h">Beyond the day job</h2>
-          <div class="body reveal">
-            <p>Outside client work I am always building and learning. Here is what I am actively into.</p>
-            <ul class="interest-list">
-              <li><b>The latest in AI</b><span>I follow the very recent developments closely: new frontier models, agent frameworks, MCP and evaluation research. I try them hands-on within days, not months, so I know what is hype and what is ready for real work.</span></li>
-              <li><b>New AI solutions</b><span>Prototyping with the latest models and agent frameworks, including Claude Agent SDK, MCP and LangGraph, to see what is genuinely ready for production.</span></li>
-              <li><b>Robotics and healthcare</b><span>Two fields I care about most. I co-founded a student robotics startup, building competition robots, and spent years on healthcare automation, from medical coding to billing and patient-data migration. I want to work where AI meets physical systems and patient outcomes.</span></li>
-              <li><b>Working across cultures</b><span>Clients and teams in Germany, Finland, Belgium, India and Australia have taught me to communicate clearly, adapt to different working styles and keep remote teams aligned.</span></li>
-              <li><b>Hackathons</b><span>First prizes at MLDS 2025 (Man vs Machine), the Defence Innovation Hackathon at IIT Madras (AI track) and the AWS Hackathon with AWS Kochi User Group. I am looking for the next one, ideally in Sydney.</span></li>
-              <li><b>AI networking</b><span>Keen to meet founders, engineers and hiring managers in Sydney's AI community. Happy to swap ideas, review architectures or pair on a problem.</span></li>
-              <li><b>The Sydney AI market</b><span>Exploring how Australian teams in finance, insurance, health and government are adopting GenAI, and where responsible-AI and governance experience helps most.</span></li>
-              <li><b>Freelance</b><span>Taking on a small number of independent engagements alongside or instead of a full-time role.</span></li>
-              <li><b>Mentoring</b><span>I enjoy mentoring engineers on LLMOps, RAG evaluation and moving from prototype to production.</span></li>
-            </ul>
-            <ul class="chips" aria-label="Interests">
-              <li>Robotics</li><li>Healthcare AI</li><li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -720,11 +819,6 @@
               <li>IBM RAG and Agentic AI: Build Next-Gen AI Systems (2025)</li>
               <li>Anthropic Academy: Building with the Claude API</li>
               <li>Anthropic Academy: Claude Code 101 (2026)</li>
-              <li>Jiffy.ai AUTOMATE Level 1</li>
-              <li>TensorFlow 2.0 with the Keras API</li>
-              <li>National Workshop on Machine Learning</li>
-              <li>Python A-Z</li>
-              <li>Autodesk Fusion 360 Certified User</li>
             </ul>
 
             <h3 class="sub">Education</h3>
@@ -735,7 +829,7 @@
 
             <h3 class="sub">Credentials and posts</h3>
             <div class="proof">
-              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/certifications/"><b>All certificates</b><span>Verified credentials on LinkedIn</span></a>
+              <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/certifications/"><b>Credentials</b><span>Verified on LinkedIn</span></a>
               <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/details/honors/"><b>Honors and awards</b><span>Certificates and photos on LinkedIn</span></a>
               <a class="proof-card" href="https://www.linkedin.com/in/akhilpeterrajan/recent-activity/all/"><b>Posts and updates</b><span>Hackathons, builds and AI notes</span></a>
             </div>
@@ -743,33 +837,23 @@
         </div>
       </section>
 
-      <section class="block" id="recommendations" aria-labelledby="rec-h">
+      <section class="block" id="beyond" aria-labelledby="beyond-h">
         <div class="rail">
-          <h2 id="rec-h">Recommendations</h2>
+          <h2 id="beyond-h">Beyond the day job</h2>
           <div class="body reveal">
-            <p><strong>15 recommendations</strong> on LinkedIn from managers and teammates. A few excerpts below, with the full text public and verifiable on my profile.</p>
-
-            <figure class="quote featured">
-              <blockquote>"I've had the privilege of working with Akhil as his Product Owner for the past two years, and I can say without hesitation: he is one of the most talented engineers I've encountered in my career. [...] His learning speed is astonishing; he picks up new domains, tools, and frameworks faster than anyone I've worked with. [...] Elite output with zero ego is extraordinarily uncommon."</blockquote>
-              <figcaption><span class="av" aria-hidden="true">MR</span><div><b>Marziam Pietro Russo</b><span>Senior AI Product Manager. Managed Akhil directly. Jun 2026.</span></div></figcaption>
-            </figure>
-
-            <div class="quote-grid">
-              <figure class="quote">
-                <blockquote>"Faced with a technical difficulty, Akhil was always able to see how the larger framing of the problem could be changed to provide a way forward. He thinks and develops outside the box, tries new things, and never gives up. [...] A gifted developer and strategist [...] He was a real asset to me and a great mentor for the team."</blockquote>
-                <figcaption><span class="av" aria-hidden="true">ML</span><div><b>Dr. Matthew Lehar</b><span>Head of Procurement Analytics, Allianz SE. Managed Akhil directly.</span></div></figcaption>
-              </figure>
-              <figure class="quote">
-                <blockquote>"Akhil is smart, competent, articulated and a good person. I appreciate his creativity and openness to explore new ways, and his determination to find working solutions to the problems we are working on. [...] I strongly recommend Akhil as a team member and contributor to the next big thing you are building!"</blockquote>
-                <figcaption><span class="av" aria-hidden="true">DW</span><div><b>Denny Wong</b><span>Repeat founder, building regulatory-compliance software. Managed Akhil directly. Feb 2022.</span></div></figcaption>
-              </figure>
-              <figure class="quote">
-                <blockquote>"He displayed excellence in machine learning, python programming, and hard work. [...] Timelines never seemed to be an issue for him since he always beat them while also ensuring that his work was of high standard."</blockquote>
-                <figcaption><span class="av" aria-hidden="true">JJ</span><div><b>Jobi Alungal Jose</b><span>Integration Platform Support Specialist, Icon Water. Managed Akhil directly. Jul 2024.</span></div></figcaption>
-              </figure>
-            </div>
-
-            <a class="proof-card wide" href="https://www.linkedin.com/in/akhilpeterrajan/details/recommendations/"><b>Read all 15 recommendations on LinkedIn</b><span>Verified profiles you can check and contact</span></a>
+            <p>What I am actively into outside client work.</p>
+            <ul class="interest-list">
+              <li><b>The latest in AI</b><span>I follow new frontier models, agent frameworks, MCP and evaluation research, and try them hands-on within days, so I know what is hype and what is ready for real work.</span></li>
+              <li><b>Robotics and healthcare</b><span>Two fields I care about. I co-founded a student robotics startup and spent years on healthcare automation, from medical coding to billing. I want to work where AI meets physical systems and patient outcomes.</span></li>
+              <li><b>Working across cultures</b><span>Teams in Germany, Finland, Belgium, India and Australia taught me to communicate clearly and keep remote teams aligned.</span></li>
+              <li><b>Hackathons</b><span>First prizes at MLDS 2025, IIT Madras (AI track) and the AWS Hackathon. Looking for the next one in Sydney.</span></li>
+              <li><b>AI networking</b><span>Keen to meet founders, engineers and hiring managers in Sydney's AI community.</span></li>
+              <li><b>The Sydney AI market</b><span>Exploring how Australian teams in finance, insurance, health and government adopt GenAI.</span></li>
+              <li><b>Mentoring</b><span>I enjoy mentoring engineers on LLMOps, RAG evaluation and moving from prototype to production.</span></li>
+            </ul>
+            <ul class="chips" aria-label="Interests">
+              <li>Robotics</li><li>Healthcare AI</li><li>Latest AI research</li><li>Agentic AI</li><li>RAG evaluation</li><li>Responsible AI</li><li>Hackathons</li><li>Sydney AI community</li><li>Freelance</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -798,7 +882,7 @@
   <a class="li-float" href="https://www.linkedin.com/in/akhilpeterrajan/" aria-label="Message Akhil on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg><span>Message Akhil on LinkedIn</span></a>
 
   <footer class="site">
-    <div class="wrap">Akhil Rajan, Sydney, Australia. Open to freelance, contract and full-time AI roles.</div>
+    <div class="wrap foot"><span>Akhil Rajan, Sydney, Australia. Open to freelance, contract and full-time AI roles.</span><a href="#top">Back to top</a></div>
   </footer>
 
 
@@ -820,6 +904,39 @@
         if (e.isIntersecting && links[e.target.id]) { Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); }); links[e.target.id].classList.add('active'); }
       }); }, { rootMargin: '-45% 0px -50% 0px' });
       Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var bar = document.getElementById('progress');
+      function onScroll() { var h = document.documentElement; var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight); bar.style.width = (p * 100) + '%'; }
+      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+      var btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
+      function setMenu(open) { btn.setAttribute('aria-expanded', open); btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); menu.hidden = !open; }
+      btn.addEventListener('click', function () { setMenu(menu.hidden); });
+      menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var nums = document.querySelectorAll('[data-count]');
+      if (reduce || !('IntersectionObserver' in window)) return;
+      var co = new IntersectionObserver(function (es) { es.forEach(function (e) {
+        if (!e.isIntersecting) return; co.unobserve(e.target);
+        var el = e.target, to = +el.getAttribute('data-count'), t0 = null;
+        function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1100); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); }
+        requestAnimationFrame(step);
+      }); }, { threshold: 0.6 });
+      nums.forEach(function (n) { co.observe(n); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('themeBtn');
+      var meta = document.querySelector('meta[name="theme-color"]');
+      function apply(t) { root.setAttribute('data-theme', t); if (meta) meta.setAttribute('content', t === 'light' ? '#F5F8FB' : '#070B14'); btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme'); }
+      apply(root.getAttribute('data-theme') || 'dark');
+      btn.addEventListener('click', function () { var t = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light'; apply(t); try { localStorage.setItem('theme', t); } catch (e) {} });
     })();
   </script>
 </body>
