@@ -224,6 +224,9 @@
       border: 1px solid var(--line); border-radius: 4px; padding: 3px 9px;
     }
     .project .links { font-family: var(--mono); font-size: 14px; margin: 0; }
+    .deck { margin-top: 16px; }
+    .deck summary { font-family: var(--mono); font-size: 14px; color: var(--accent); cursor: pointer; }
+    .deck object { display: block; width: 100%; height: min(70vh, 560px); margin-top: 12px; border: 1px solid var(--line); border-radius: 6px; }
 
     /* Results */
     .results { margin: 0; }
@@ -641,7 +644,13 @@
               <p class="tag">Multi-tenant support AI, embedded with one script tag.</p>
               <p>A chat assistant any business can drop into its site. It answers from the customer's own documents with citations, checks order status for the signed-in user only, opens Jira tickets and hands off to a live agent. Quality is gated by about 20 release checks and 137 tests.</p>
               <ul class="stack" aria-label="Technologies"><li>Claude API</li><li>FastAPI</li><li>React</li><li>Postgres + Redis</li><li>Jira</li></ul>
-              <p class="links">Source available on request. Message me on <a href="https://www.linkedin.com/in/akhilpeterrajan/">LinkedIn</a>.</p>
+              <p class="links"><a href="https://github.com/akhil4rajan/supportpilot-ai">View the code on GitHub</a> · <a href="assets/SupportPilot-AI-Pitch-Deck.pdf">Pitch deck (PDF)</a></p>
+              <details class="deck">
+                <summary>Preview the pitch deck (11 slides)</summary>
+                <object data="assets/SupportPilot-AI-Pitch-Deck.pdf#view=FitH" type="application/pdf" aria-label="SupportPilot AI pitch deck">
+                  <p>Your browser can't show the PDF inline. <a href="assets/SupportPilot-AI-Pitch-Deck.pdf">Open the pitch deck</a>.</p>
+                </object>
+              </details>
             </article>
 
             <article class="project">
