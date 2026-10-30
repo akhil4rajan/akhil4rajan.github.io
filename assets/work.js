@@ -27,4 +27,13 @@
     track.addEventListener('scroll', update, { passive: true });
     update();
   });
+
+  document.querySelectorAll('[data-seek]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = document.getElementById('demoVideo');
+      v.currentTime = +b.getAttribute('data-seek');
+      v.play();
+      v.scrollIntoView({ block: 'center' });
+    });
+  });
 })();

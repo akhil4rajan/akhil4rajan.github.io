@@ -46,7 +46,7 @@
         <p class="tag">Real-time voice AI for utility field crews. Built on Azure.</p>
         <p class="lede">Before every job, a utility crew fills in a hazard assessment (JSA / SWMS) by hand, which takes around 40 minutes. The crew already talks through the hazards in the pre-job briefing. CrewBrief listens to that briefing, drafts the form from what was said, asks about anything critical that was missed, and hands it to the crew lead to check and sign. The form is never submitted without a person.</p>
         <div class="actions">
-          <a class="btn primary" href="#demo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Demo</a>
+          <a class="btn primary" href="#demo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Watch the demo (4 min)</a>
           <a class="btn" href="CrewBrief-Pitch-Deck.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Pitch deck (PDF)</a>
           <a class="btn" href="https://github.com/akhil4rajan/crewbrief"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Code on GitHub</a>
           <button class="btn" id="copyLink" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>Copy link</span></button>
@@ -57,21 +57,31 @@
         <div class="rail">
           <h2 id="demo-h">Demo</h2>
           <div class="body">
-            <!-- When the demo video is ready: save it as demo.mp4 in this folder and replace the <img> and .soon
-                 lines below with:
-                 <video controls preload="metadata" playsinline poster="demo-poster.jpg"><source src="demo.mp4" type="video/mp4"></video> -->
             <div class="media">
-              <img src="demo-poster.jpg" alt="CrewBrief live demo: LV service connection, pole replacement with a crane, night storm restoration" width="1280" height="720">
-              <p class="soon"><b>Demo video:</b> coming with this release. The walkthrough below is the script it follows.</p>
+              <video id="demoVideo" controls preload="metadata" playsinline poster="poster.jpg" aria-describedby="demo-desc">
+                <source src="crewbrief-demo.mp4" type="video/mp4">
+                <a href="crewbrief-demo.mp4">Download the demo video (MP4)</a>.
+              </video>
             </div>
-            <p class="caption">Three scripted briefings, one per scenario. The <a href="https://github.com/akhil4rajan/crewbrief/blob/main/docs/demo.md">full demo script</a> is on GitHub, with steps to run it yourself.</p>
+            <p class="caption" id="demo-desc">4 minutes: why crews need it, a full run of a pole replacement briefing, then how it stays trustworthy. From the <a href="https://github.com/akhil4rajan/crewbrief/releases/tag/v1.0-demo">v1.0-demo release</a>; the <a href="https://github.com/akhil4rajan/crewbrief/blob/main/docs/demo.md">demo script</a> has steps to run it yourself.</p>
+            <ol class="chapters" aria-label="Jump to a part of the video">
+              <li><button type="button" data-seek="0"><time>0:00</time>The 40-minute form problem</button></li>
+              <li><button type="button" data-seek="30"><time>0:30</time>Start a briefing</button></li>
+              <li><button type="button" data-seek="40"><time>0:40</time>Record: the form fills in live</button></li>
+              <li><button type="button" data-seek="80"><time>1:20</time>Clarify: closing questions</button></li>
+              <li><button type="button" data-seek="90"><time>1:30</time>Check: one decision at a time</button></li>
+              <li><button type="button" data-seek="140"><time>2:20</time>Sign: the JSEA form and PPE</button></li>
+              <li><button type="button" data-seek="170"><time>2:50</time>Sign off, PDF and audit log</button></li>
+              <li><button type="button" data-seek="200"><time>3:20</time>Trust, Azure, privacy and impact</button></li>
+            </ol>
+            <h3>What happens in a briefing</h3>
             <ol class="steps">
               <li><b>Record.</b> The crew lead starts a briefing and reads the recording notice. CrewBrief never interrupts: the form fills in on the side as people talk, and each voice shows up as a speaker.</li>
               <li><b>Clarify.</b> At the end, CrewBrief checks for critical gaps and asks up to three questions out loud, e.g. <i>"I heard work near live LV, but no isolation or earthing control. What's the plan?"</i></li>
               <li><b>Check.</b> One card at a time for each item that needs a decision: a typical hazard nobody mentioned, a hazard without a control. Blocking items come first.</li>
-              <li><b>Sign.</b> The finished JSEA as a paper-style form: permits, hazards with risk before and after controls on a 5×5 matrix, PPE suggested from the job's hazards, emergency plan, job steps and crew sign-on. The crew lead signs and submits; the rest of the crew taps <i>I've read the form</i>.</li>
+              <li><b>Sign.</b> The finished JSEA as a paper-style form: permits, hazards with risk before and after controls on a 5×5 matrix, PPE suggested from the job's hazards, emergency plan, job steps and crew sign-on. The crew lead signs and submits; every AI suggestion and human edit is kept in an audit trail.</li>
             </ol>
-            <p class="note">The scenarios: an LV service connection where the isolation plan comes up late, a well-run pole replacement with a crane near live LV, and a night storm callout with a tired crew where the critical gaps stay open until Clarify.</p>
+            <p class="note">The video uses the pole replacement scenario. The app also has an LV service connection where the isolation plan comes up late, and a night storm callout with a tired crew where the critical gaps stay open until Clarify.</p>
           </div>
         </div>
       </section>
@@ -112,25 +122,24 @@
         <div class="rail">
           <h2 id="deck-h">Pitch deck</h2>
           <div class="body">
-            <div class="deck-head"><h3>CrewBrief pitch (12 slides)</h3><a href="CrewBrief-Pitch-Deck.pdf">Open the PDF</a></div>
+            <div class="deck-head"><h3>CrewBrief pitch (11 slides)</h3><a href="CrewBrief-Pitch-Deck.pdf">Open the PDF</a></div>
             <div class="slides">
               <div class="track" tabindex="0" role="region" aria-label="CrewBrief pitch deck slides">
-                <img src="slides/s-01.jpg" alt="CrewBrief pitch deck, slide 1 of 12: CrewBrief" width="1280" height="720">
-                <img src="slides/s-02.jpg" alt="CrewBrief pitch deck, slide 2 of 12: Every job starts with a 40-minute form" width="1280" height="720" loading="lazy">
-                <img src="slides/s-03.jpg" alt="CrewBrief pitch deck, slide 3 of 12: Crews already say it out loud. Capture it." width="1280" height="720" loading="lazy">
-                <img src="slides/s-04.jpg" alt="CrewBrief pitch deck, slide 4 of 12: How it works: one standup, one signed form" width="1280" height="720" loading="lazy">
-                <img src="slides/s-05.jpg" alt="CrewBrief pitch deck, slide 5 of 12: Live demo" width="1280" height="720" loading="lazy">
-                <img src="slides/s-06.jpg" alt="CrewBrief pitch deck, slide 6 of 12: Built so a wrong form never looks complete" width="1280" height="720" loading="lazy">
-                <img src="slides/s-07.jpg" alt="CrewBrief pitch deck, slide 7 of 12: Measured, not assumed" width="1280" height="720" loading="lazy">
-                <img src="slides/s-08.jpg" alt="CrewBrief pitch deck, slide 8 of 12: Enterprise-ready on Azure" width="1280" height="720" loading="lazy">
-                <img src="slides/s-09.jpg" alt="CrewBrief pitch deck, slide 9 of 12: Privacy and security by default" width="1280" height="720" loading="lazy">
-                <img src="slides/s-10.jpg" alt="CrewBrief pitch deck, slide 10 of 12: The time comes back to the job" width="1280" height="720" loading="lazy">
-                <img src="slides/s-11.jpg" alt="CrewBrief pitch deck, slide 11 of 12: From prototype to every crew" width="1280" height="720" loading="lazy">
-                <img src="slides/s-12.jpg" alt="CrewBrief pitch deck, slide 12 of 12: Let&#x27;s pilot it with 10 crews" width="1280" height="720" loading="lazy">
+                <img src="slides/s-01.jpg" alt="CrewBrief pitch deck, slide 1 of 11: CrewBrief" width="1280" height="720">
+                <img src="slides/s-02.jpg" alt="CrewBrief pitch deck, slide 2 of 11: Every job starts with a 40-minute form" width="1280" height="720" loading="lazy">
+                <img src="slides/s-03.jpg" alt="CrewBrief pitch deck, slide 3 of 11: Crews already say it out loud. Capture it." width="1280" height="720" loading="lazy">
+                <img src="slides/s-04.jpg" alt="CrewBrief pitch deck, slide 4 of 11: How it works: one standup, one signed form" width="1280" height="720" loading="lazy">
+                <img src="slides/s-05.jpg" alt="CrewBrief pitch deck, slide 5 of 11: Live demo" width="1280" height="720" loading="lazy">
+                <img src="slides/s-06.jpg" alt="CrewBrief pitch deck, slide 6 of 11: Built so a wrong form never looks complete" width="1280" height="720" loading="lazy">
+                <img src="slides/s-07.jpg" alt="CrewBrief pitch deck, slide 7 of 11: Measured, not assumed" width="1280" height="720" loading="lazy">
+                <img src="slides/s-08.jpg" alt="CrewBrief pitch deck, slide 8 of 11: Enterprise-ready on Azure" width="1280" height="720" loading="lazy">
+                <img src="slides/s-09.jpg" alt="CrewBrief pitch deck, slide 9 of 11: Privacy and security by default" width="1280" height="720" loading="lazy">
+                <img src="slides/s-10.jpg" alt="CrewBrief pitch deck, slide 10 of 11: The time comes back to the job" width="1280" height="720" loading="lazy">
+                <img src="slides/s-11.jpg" alt="CrewBrief pitch deck, slide 11 of 11: From prototype to every crew" width="1280" height="720" loading="lazy">
               </div>
-              <div class="slide-nav"><button type="button" class="prev" aria-label="Previous slide">←</button><span class="count" aria-live="polite">1 / 12</span><button type="button" class="next" aria-label="Next slide">→</button></div>
+              <div class="slide-nav"><button type="button" class="prev" aria-label="Previous slide">←</button><span class="count" aria-live="polite">1 / 11</span><button type="button" class="next" aria-label="Next slide">→</button></div>
             </div>
-            <p class="caption">Problem, how it works, the live demo, trust and accuracy, the Azure platform, privacy, impact, roadmap and the ask: a pilot with 10 crews.</p>
+            <p class="caption">Problem, how it works, the live demo, trust and accuracy, the Azure platform, privacy, impact and the roadmap from prototype to every crew.</p>
           </div>
         </div>
       </section>

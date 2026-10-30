@@ -68,6 +68,10 @@ section.block { border-top: 1px solid var(--line); padding: 64px 0; }
 .media video, .media img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .media .soon { position: absolute; inset: auto 0 0 0; padding: 14px 18px; background: rgba(7,11,20,.86); color: #DCE6F0; font-family: var(--mono); font-size: 13.5px; }
 .media .soon b { color: #4FD1C5; font-weight: 600; }
+.chapters { list-style: none; margin: 6px 0 32px; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 16px; }
+.chapters button { display: flex; gap: 12px; width: 100%; text-align: left; font: inherit; font-size: 15px; color: var(--text-2); background: none; border: 0; border-bottom: 1px solid var(--line); padding: 8px 0; cursor: pointer; }
+.chapters button:hover { color: var(--accent); }
+.chapters time { font-family: var(--mono); font-size: 13px; color: var(--accent); min-width: 34px; padding-top: 2px; }
 .caption { font-size: 14.5px; color: var(--muted) !important; margin-top: 12px !important; }
 .slides { position: relative; }
 .track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); scrollbar-width: none; }
@@ -105,7 +109,7 @@ footer.site a { color: var(--muted); }
   .rail { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   section.block { padding: 48px 0; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .points { grid-template-columns: minmax(0, 1fr); }
+  .points, .chapters { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 600px) {
   .wrap { padding: 0 16px; }
