@@ -541,6 +541,11 @@
     .more { margin-top: 18px !important; font-family: var(--mono); font-size: 13.5px; color: var(--muted); }
     .more a { color: var(--text); }
     .project p { max-width: 62ch; }
+    .project h3 a { text-decoration: none; }
+    .project h3 .new { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 1px 9px; margin-left: 8px; vertical-align: 2px; }
+    .project .links + .links { margin-top: 8px; }
+    .project .links a.case { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .project .links a.case:hover { text-decoration: underline; }
     .li-float { opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .3s, transform .3s; }
     .li-float.show { opacity: 1; transform: none; pointer-events: auto; }
     @media (max-width: 860px) { .cards.three { grid-template-columns: minmax(0,1fr); } section.block { padding: 64px 0; } .quote-grid { grid-template-columns: minmax(0,1fr); } }
@@ -641,18 +646,22 @@
         <div class="rail">
           <h2 id="work-h">Selected work</h2>
           <div class="body">
-            <article class="project">
-              <h3>SupportPilot AI</h3>
+            <article class="project" id="crewbrief">
+              <h3><a href="work/crewbrief/">CrewBrief</a> <span class="new">Latest release</span></h3>
+              <p class="tag">Real-time voice AI that turns a crew's pre-job briefing into a signed hazard form.</p>
+              <p>Utility crews spend around 40 minutes filling in a hazard assessment by hand before every job. CrewBrief listens to the briefing they already hold, drafts the form with evidence for every field, asks about critical hazards nobody covered, and hands it to the crew lead to check and sign. Built on Azure, with safety rules in code rather than prompts.</p>
+              <ul class="stack" aria-label="Technologies"><li>Azure AI Speech</li><li>Azure OpenAI</li><li>Azure AI Search</li><li>FastAPI</li><li>React</li></ul>
+              <p class="links"><a class="case" href="work/crewbrief/">Demo video, pitch deck and how it works →</a></p>
+              <p class="links"><a href="https://github.com/akhil4rajan/crewbrief">View the code on GitHub</a> · <a href="work/crewbrief/#demo">Demo video (4 min)</a> · <a href="work/crewbrief/CrewBrief-Pitch-Deck.pdf">Pitch deck (PDF)</a> · <a href="https://github.com/akhil4rajan/crewbrief/releases/tag/v1.0-demo">v1.0 release</a></p>
+            </article>
+
+            <article class="project" id="supportpilot-ai">
+              <h3><a href="work/supportpilot-ai/">SupportPilot AI</a></h3>
               <p class="tag">Multi-tenant support AI, embedded with one script tag.</p>
-              <p>A chat assistant any business can drop into its site. It answers from the customer's own documents with citations, checks order status for the signed-in user only, opens Jira tickets and hands off to a live agent. Quality is gated by about 20 release checks and 137 tests.</p>
+              <p>A chat assistant any business can drop into its site. It answers from the customer's own documents with citations, checks order status for the signed-in user only, opens Jira tickets and hands off to a live agent. Quality is gated by about 20 release checks and 153 tests.</p>
               <ul class="stack" aria-label="Technologies"><li>Claude API</li><li>FastAPI</li><li>React</li><li>Postgres + Redis</li><li>Jira</li></ul>
-              <p class="links"><a href="https://github.com/akhil4rajan/supportpilot-ai">View the code on GitHub</a> · <a href="assets/SupportPilot-AI-Pitch-Deck.pdf">Pitch deck (PDF)</a></p>
-              <details class="deck">
-                <summary>Preview the pitch deck (11 slides)</summary>
-                <object data="assets/SupportPilot-AI-Pitch-Deck.pdf#view=FitH" type="application/pdf" aria-label="SupportPilot AI pitch deck">
-                  <p>Your browser can't show the PDF inline. <a href="assets/SupportPilot-AI-Pitch-Deck.pdf">Open the pitch deck</a>.</p>
-                </object>
-              </details>
+              <p class="links"><a class="case" href="work/supportpilot-ai/">Demo video, pitch decks and how it works →</a></p>
+              <p class="links"><a href="https://github.com/akhil4rajan/supportpilot-ai">View the code on GitHub</a> · <a href="work/supportpilot-ai/#demo">Demo video (95 s)</a> · <a href="assets/SupportPilot-AI-Pitch-Deck.pdf">Pitch deck (PDF)</a> · <a href="work/supportpilot-ai/SupportPilot-AI-Technical-Deck.pdf">Technical deck (PDF)</a></p>
             </article>
 
             <article class="project">
