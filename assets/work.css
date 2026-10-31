@@ -105,6 +105,14 @@ section.block { border-top: 1px solid var(--line); padding: 64px 0; }
 .stack li { font-family: var(--mono); font-size: 12.5px; color: var(--text-2); border: 1px solid var(--line); border-radius: 4px; padding: 3px 9px; background: var(--panel); }
 :root[data-theme="light"] .stats li, :root[data-theme="light"] .points li { box-shadow: 0 1px 2px rgba(15,26,42,.05), 0 8px 24px rgba(15,26,42,.05); }
 
+.fw-h { margin: 28px 0 12px !important; }
+.fw { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.fw li { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+.fw b { display: block; font-family: var(--mono); font-size: 13.5px; font-weight: 600; color: var(--accent); }
+.fw span { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+@media (max-width: 860px) { .fw { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .fw { grid-template-columns: minmax(0, 1fr); } }
+
 footer.site { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
 footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 footer.site a { color: var(--muted); }
