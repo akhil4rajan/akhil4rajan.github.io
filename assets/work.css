@@ -81,6 +81,7 @@ section.block { border-top: 1px solid var(--line); padding: 64px 0; }
 .track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); scrollbar-width: none; }
 .track::-webkit-scrollbar { display: none; }
 .track img { flex: 0 0 100%; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; scroll-snap-align: start; display: block; }
+.screens .track img { aspect-ratio: 1040 / 700; background: #F7F7F5; }
 .slide-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 12px; font-family: var(--mono); font-size: 13.5px; color: var(--muted); }
 .slide-nav button { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); color: var(--text); font-size: 16px; cursor: pointer; }
 .slide-nav button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
